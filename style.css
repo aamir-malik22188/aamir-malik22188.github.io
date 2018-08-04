@@ -1,0 +1,19 @@
+#static{
+    display:flex;
+    justify-content: center;
+    font: bold;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    display: flex;
+    justify-content: center;
+    height:400px;
+    padding: 50px;
+
+}
+
