@@ -1,19 +1,133 @@
-#static{
-    display:flex;
-    justify-content: center;
-    font: bold;
+/*CSS for Landing Page*/
+body{
+    background-color: rgb(162,165,164);
+    background-repeat: contain;
 }
-
-#title{
+h1{
     display: flex;
     justify-content: center;
+    color: black;
+}
+
+
+
+#enter{
+    background-color: blue;
+    font-weight: bolder;
+}
+
+/*CSS for Intro Page*/
+
+.nav-wrapper{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(39,64,87);
+    padding: 0;
+    
+}
+
+
+#portfolioLink{
+    justify-content: center;
+    display: flex;
+    margin-right: 100px;
+    font-size: 1.8em;
+   
+}
+
+#contactLink{
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 1.8em;
+    margin-right: -50%;
+}
+
+
+.brand-logo {
+    justify-content: center;
+    display: flex;
+   font-size: 6em;
+   z-index: 1;
+   position: absolute;
+   font-family: 'Dancing Script', cursive;
+   color: white;
+   left: 700px;
+   top: -30px;
+}
+
+#card{
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    width: 70%;
+    top: 150px;
+    left: 150px;
+    padding: 10px;
+    margin: 0px;
+    padding-left: 0;
+
+}
+
+.aboutMe{
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    padding: 25px;
+}
+
+#cardTitle{
+    justify-content: center;
+    display: flex;
 }
 
 img{
-    display: flex;
-    justify-content: center;
-    height:400px;
-    padding: 50px;
-
+    object-fit: cover;
+    width: 300px;
+    height: 337px;
+    border: 5px solid black;
 }
 
+/* CSS for the Contact Me Page */
+
+#contactCard{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 4px;
+    margin: 100px;
+    left: 115px;
+    transform: scale(1.2);
+}
+
+.card-content{
+    justify-content: center;
+    display: Center;
+    position: relative;
+    margin: 0;
+}
+
+.social{
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    padding: 4px;
+}
+
+.github{
+   background-color: black;
+}
+.github:hover{
+    background-color: black;
+}
+
+.linkedin{
+    background-color: rgb(2,119,181);
+}
+
+.linkedin:hover{
+    background-color: rgb(2,119,181);
+}
+
+
+/*All CSS ANIMATIONS BELOW*/
