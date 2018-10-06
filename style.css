@@ -56,34 +56,11 @@ h1{
    top: -30px;
 }
 
-#card{
-    position: absolute;
-    justify-content: center;
-    display: flex;
-    width: 70%;
-    top: 150px;
-    left: 150px;
-    padding: 10px;
-    margin: 0px;
-    padding-left: 0;
 
-}
-
-.aboutMe{
-    justify-content: center;
-    display: flex;
-    width: 50%;
-    padding: 25px;
-}
-
-#cardTitle{
-    justify-content: center;
-    display: flex;
-}
 
 img{
     object-fit: cover;
-    width: 300px;
+    width: 200px;
     height: 337px;
     border: 5px solid black;
 }
@@ -129,5 +106,22 @@ img{
     background-color: rgb(2,119,181);
 }
 
+/* CSS for Portfolio Page */
+#portfolioHeader1{
+    justify-content: center;
+    display: flex;
+   
+}
+#portfolioHeader2{
+    justify-content: center;
+    display: flex;
+}
+
+#gitProjectCards{
+    justify-content: center;
+}
 
 /*All CSS ANIMATIONS BELOW*/
+
+
+/* Media Queries */

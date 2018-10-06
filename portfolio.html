@@ -12,6 +12,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -26,31 +27,45 @@
     <title>Aamir Malik - Full Flex</title>
 
 </head>  
-<body >
 
-    
 <!-- Navigation HTML -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col s12">
             <nav>
                 <div class="nav-wrapper">
-                    <a href="/index.html" class="brand-logo center">A.</a>
                         <ul id="nav-mobile" class="hide-on-med-and-down">
-                            <li><a href="/portfolio.html">Portfolio</a></li>
-                            <li><a href="/contact.html">Contact Me</a></li>
+                            <li><a href="portfolio.html" id="portfolioLink">Portfolio</a></li>
+                            <li><a href="contact.html" id="contactLink">Contact Me</a></li>
                         </ul>
                 </div>
             </nav>
+            
+        </div>
+        <a href="/index.html" class="brand-logo center">A.</a>
+    </div>
+</div>
+
+<body>
+
+    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col s12" id="portfolioHeader1">
+            <h3>Click on Project Title to see additional details on the project</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12" id="portfolioHeader2">
+            <h4>The links will take you to each projects GitHub page</h4>
         </div>
     </div>
 </div>
 
-<h3>Click on Project Title to see additional details on the project</h3>
-<h4>The links will take you to each projects GitHub page</h4>
+
 
 <!-- Cards for each Github Project -->
-<div class="container-fluid">
+<div class="container-fluid" id="gitProjectCards">
     <div class="row">
         <div class="col s3">    
             <div class="card">
