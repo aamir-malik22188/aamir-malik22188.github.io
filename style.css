@@ -1,0 +1,123 @@
+/* Splash page CSS */
+#splashBody{
+    background-color: black;
+}
+#logo{
+    justify-content: center;
+    display: flex;
+    padding: 250px 0;
+    color:  gold;
+    font-size: 20em;
+    font-family: 'Nothing You Could Do', cursive;
+    animation: animateLogo 7s infinite;
+}
+@keyframes animateLogo {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+        transform: scale(1,1);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1.5,1.5);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(10px);
+        transform: scale(1,1);
+    }
+}
+
+
+/* main html */
+div.page {
+    height:100px;
+    }
+
+div.nav-wrapper{
+    background-color: black;
+}
+
+#brandLogo{
+    color: gold;
+    animation: brandLogo 3s infinite linear;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+@keyframes brandLogo {
+    from {
+            -webkit-transform: rotateY(0deg);
+    }
+    to {
+            -webkit-transform: rotateY(360deg);
+    }
+}
+
+
+
+/* About Me Section */
+
+#aboutMeCard{
+    justify-content: center;
+    display: flex;
+    padding: 100px;
+    position: relative;
+    bottom: 100px;   
+}
+
+
+/* portfolio section */
+
+
+
+
+ /* Contact section */
+
+ /* Scroll down Animation*/
+ #scroll{
+     justify-content: center;
+     display: flex;
+     width: 100%;
+     position: relative;
+     bottom: 230px;
+ }
+
+ #downArrow, #downArrow2, #downArrow3{
+     justify-content: center;
+     display: flex;
+     width: 100%;
+     position: relative;
+     bottom: 250px;
+     transform: translate(-50%,-50%);
+ }
+
+
+ #downArrow, #downArrow2, #downArrow3{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+#downArrow2{
+    animation-delay: -0.2s;
+}
+#downArrow3{
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
