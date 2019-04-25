@@ -17,29 +17,24 @@
         transform: translateY(-100px);
         transform: scale(1,1);
     }
-    50%{
-        opacity: 0.5;
-        transform: scale(1.5,1.5);
-    }
     100%{
-        opacity: 0;
-        transform: translateY(10px);
-        transform: scale(1,1);
+        opacity: 1;
+        transform: scale(1.5,1.5);
     }
 }
 
 
 /* main html */
-div.page {
-    height:100px;
-    }
 
-div.nav-wrapper{
+div.nav-wrapper{ 
     background-color: black;
+    width: 100%;
 }
 
 #brandLogo{
     color: gold;
+    font-size: 4em;
+    left: 500px;
     animation: brandLogo 3s infinite linear;
     font-family: 'Nothing You Could Do', cursive;
 }
@@ -53,60 +48,107 @@ div.nav-wrapper{
     }
 }
 
+#nav-mobile{
+    justify-content: center;
+    display: flex;
+    font-family: 'Nothing You Could Do', cursive;
+}
 
+#navTitle{
+    color: gold;
+    font-size: 1.5em;
+}
 
 /* About Me Section */
+div.page {
+    height:110px;
+    justify-content: center;
+    display: flex;
+    }
+
+#about{
+    justify-content: center;
+    display: flex;
+    font-family: 'Nothing You Could Do', cursive;
+}
 
 #aboutMeCard{
     justify-content: center;
     display: flex;
-    padding: 100px;
     position: relative;
-    bottom: 100px;   
+    width: 60%;
+}
+
+div.card-image{
+    width:100%;
+    padding: 0;
+}
+
+#myPic{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    border: 0;
+    width:100%;
+    height:95%;
+    margin: 10px;
+    
 }
 
 
 /* portfolio section */
-
+div.page2 {
+    height:120px;
+    justify-content: center;
+    display: flex;
+    }
 
 
 
  /* Contact section */
+#contactCard{
+    justify-content: center;
+    width: 100%;
+    right: 100px;
+   
+}
 
  /* Scroll down Animation*/
  #scroll{
      justify-content: center;
      display: flex;
      width: 100%;
-     position: relative;
-     bottom: 230px;
  }
 
+ #arrows{
+    justify-content: center;
+    display: flex;
+}
+
  #downArrow, #downArrow2, #downArrow3{
-     justify-content: center;
-     display: flex;
      width: 100%;
-     position: relative;
-     bottom: 250px;
+     position: absolute;
      transform: translate(-50%,-50%);
  }
 
-
  #downArrow, #downArrow2, #downArrow3{
-    display: block;
     width: 30px;
     height: 30px;
     border-bottom: 5px solid #06A8FF;
     border-right: 5px solid #06A8FF;
     transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+    margin: -10px%;
+    animation: animate 2.2s infinite;
+}
+#downArrow{
+    animation-delay: -0.1s
 }
 #downArrow2{
-    animation-delay: -0.2s;
+    animation-delay: -0.5s;
 }
 #downArrow3{
-    animation-delay: -0.4s;
+    animation-delay: -1s;
+    
 }
 @keyframes animate {
     0%{

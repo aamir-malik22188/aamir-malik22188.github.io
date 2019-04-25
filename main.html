@@ -24,61 +24,61 @@
 <body>
 
 <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo center" id="brandLogo">A</a>
+  <div class="nav-wrapper">
+    <div class="row">
+      <a href="#" class="brand-logo left" id="brandLogo">A</a>
       <ul id="nav-mobile" class="center hide-on-med-and-down">
-        <li><a href="#" data-page="about">About Me</a></li>
-        <li><a href="#" data-page="portfolio">Portfolio</a></li>
-        <li><a href="#" data-page="contact">Contact Me</a></li>
+        <li><a id=navTitle href="#" data-page="about">About Me</a></li>
+        <li><a id=navTitle href="#" data-page="portfolio">Portfolio</a></li>
+        <li><a id=navTitle href="#" data-page="contact">Contact Me</a></li>
       </ul>
     </div>
-
+  </div>
 </nav>
         
 <!-- About Me Information -->
   <div class="page" id="about"><h1>About Me</h1></div>
 
 <div class="container" id="aboutMeCard">
-  <div class="col s12 m7">
+  <div class="col-s12-m7">
+    <div class="row">
       <div class="card horizontal">
         <div class="card-image">
-          <img src="/images/Screen Shot 2019-03-17 at 8.45.35 PM.png">
+          <img id="myPic" src="/images/Screen Shot 2019-03-17 at 8.45.35 PM.png">
         </div>
         <div class="card-stacked">
           <div class="card-content">
-              <p>Hello and thank you for coming to my page. </p>
+              <p>Hello and thank you for coming to my page. <br>
+              <br>    
+              My name is Aamir Malik and I am currently working at Inform Diagnostics (formerly known as Miraca Life Sciences) as an IT QA Tester/Trainer.<br>
               <br>
-              <p>My name is Aamir Malik and I am currently working at Inform Diagnostics (formerly known as Miraca Life Sciences) as an IT QA Tester/Trainer.</p> 
+              I have worked at Inform Diagnostics for the last 6 years and 5 of those 6 years, I was in a leadership role in Lab Operations.<br>
               <br>
-              <p>I have worked at Inform Diagnostics for the last 6 years and 5 of those 6 years, I was in a leadership role in Lab Operations.</p>
+              I recently received my certification in Full Stack Development from Southern Methodist University (SMU). With this certification, I hope to develop and deliver meaningful applications 
+              that could help simplify certain tasks that we do on a day to day basis. However, I would also like to join a team and create impactful applications on a grander scale.<br>
               <br>
-              <p>I recently received my certification in Full Stack Development from Southern Methodist University (SMU). With this certification, I hope to develop and deliver meaningful applications 
-               that could help simplify certain tasks that we do on a day to day basis. However, I would also like to join a team and create impactful applications on a grander scale.</p>
+              Now that you have read a little bit about me, please scroll down or click on the “Portofolio” link in the Navbar to see a few of the projects I have worked on.<br>
               <br>
-              <p>Now that you have read a little bit about me, please scroll down or click on the “Portofolio” link in the Navbar to see a few of the projects I have worked on.</p>
-              <br>
-              <p>Lastly, if you want to contact me, click on the “Contact Me” link in the Navbar or scroll to very bottom for direct links to my GitHub and Linkedin pages.</p> 
+              Lastly, if you want to contact me, click on the “Contact Me” link in the Navbar or scroll to very bottom for direct links to my GitHub and Linkedin pages.</p> 
+              
+
+
+
+             
           </div>
         </div>
       </div>
+    </div>
   </div>
 </div>
 
 
   <!--Scroll Down -->
 <div class="container">
-  <div class="row">
-    <div id="scroll" class="col s12 m4">
-      <h3 >Scroll down for my Portfolio</h3>
-    </div>
-  </div>
-  <div class="row">
-    <div id="downArrow" class="col s12 m4">
-    </div>
-    <div id="downArrow2" class="col s12 m4">
-    </div>
-    <div id="downArrow3" class="col s12 m4">
-    </div>
+  <div class="row" id="arrows">
+    <div id="downArrow"></div>
+    <div id="downArrow2"></div>
+    <div id="downArrow3"></div>
   </div>
 </div>
 
@@ -163,30 +163,31 @@
         </div>
 </div> 
 
-<div class="container">
-    <div class="row">
-      <div id="scroll" class="col s12 m4">
-        <h3>Scroll down for my contact information</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div id="downArrow" class="col s12 m4">
-        <i class="material-icons">keyboard_arrow_down</i>
-      </div>
+  <!--Scroll Down -->
+  <div class="container">
+    <div class="row" id="arrows">
+      <div id="downArrow"></div>
+      <div id="downArrow2"></div>
+      <div id="downArrow3"></div>
     </div>
   </div>
 
 <div class="page" id="contact"><h1>Contact Me</h1></div>
 <div class="container">
    <div class="row">
-    <div class="col s12 m5">
-      <div class="card-panel teal">
-        <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-        I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-        </span>
+    <div class="col s12 m7">
+      <div class="card-panel teal" id="contactCard">
+        <span class="white-text">If you want additional information, please feel free to email me at Aamir22188@gmail.com.</span>
+        <br>
+        <p class="white-text">You can also check out my Linkdin and Github Pages.</p>
+        <div class="row">
+          <a class="waves-effect blue waves-light btn-large"><i class="material-icons right">cloud</i>Linkedin</a>
+          <a class="waves-effect black waves-light btn-large"><i class="material-icons right">cloud</i>GitHub</a>
+        </div>
       </div>
     </div>
   </div>
+  
 </div>
 </div>
  
