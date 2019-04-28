@@ -23,6 +23,8 @@
     }
 }
 
+  
+            
 
 /* main html */
 
@@ -39,14 +41,7 @@ div.nav-wrapper{
     font-family: 'Nothing You Could Do', cursive;
 }
 
-@keyframes brandLogo {
-    from {
-            -webkit-transform: rotateY(0deg);
-    }
-    to {
-            -webkit-transform: rotateY(360deg);
-    }
-}
+
 
 #nav-mobile{
     justify-content: center;
@@ -61,7 +56,7 @@ div.nav-wrapper{
 
 /* About Me Section */
 div.page {
-    height:110px;
+    height:150px;
     justify-content: center;
     display: flex;
     }
@@ -72,28 +67,17 @@ div.page {
     font-family: 'Nothing You Could Do', cursive;
 }
 
-#aboutMeCard{
-    justify-content: center;
-    display: flex;
-    position: relative;
-    width: 60%;
-}
-
-div.card-image{
-    width:100%;
-    padding: 0;
-}
-
 #myPic{
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    border: 0;
-    width:100%;
-    height:95%;
-    margin: 10px;
-    
+    float: left;
+    padding: 10px;
 }
+
+#aboutMePara{
+    color: black;
+
+}
+
+
 
 
 /* portfolio section */
@@ -103,15 +87,31 @@ div.page2 {
     display: flex;
     }
 
+#portfolio{
+    justify-content: center;
+    display: flex;
+    font-family: 'Nothing You Could Do', cursive;
+}
 
 
  /* Contact section */
+ #contact{
+    justify-content: center;
+    display: flex;
+    font-family: 'Nothing You Could Do', cursive;
+ }
+ 
 #contactCard{
     justify-content: center;
+    display: flex;
     width: 100%;
-    right: 100px;
-   
 }
+
+button{
+    align-content: center;
+    left: 100px;
+}
+
 
  /* Scroll down Animation*/
  #scroll{
@@ -162,4 +162,13 @@ div.page2 {
         opacity: 0;
         transform: rotate(45deg) translate(20px,20px);
     }
+}
+
+footer{
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 75px;
+    font-size: 25px;
 }

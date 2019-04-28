@@ -5,6 +5,7 @@ $().ready(function(){
         console.log("work?")
 
 
-        
       });
+      $('.sidenav').sidenav();
     });
+   

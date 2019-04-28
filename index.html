@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aamir Malik Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aamir Malik's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
    
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -19,22 +19,185 @@
       
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    
 </head>
-<body id="splashBody">
+<body>
 
-    <!-- Splash page -->
-<div class="container">
+<nav>
+  <div class="nav-wrapper">
     <div class="row">
-        <div clas="col s12 m7">
-            <h1 id="logo">A</h1>
-        </div>
-        <div clas="col s12 m7">
-            <a class="btn-floating btn-large waves-effect waves-light yellow" id="enterBtn" href='/main.html'>Enter<i class="material-icons"></i></a>
-        </div>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="center hide-on-med-and-down">
+        <li><a id=navTitle href="#" data-page="about">About Me</a></li>
+        <li><a id=navTitle href="#" data-page="portfolio">Portfolio</a></li>
+        <li><a id=navTitle href="#" data-page="contact">Contact Me</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="#" data-page="about">About Me</a></li>
+  <li><a href="#" data-page="portfolio">Portfolio</a></li>
+  <li><a href="#" data-page="contact">Contact</a></li>
+</ul>
+        
+<!-- About Me Information -->
+  <div class="page" id="about"><h1>About Me</h1></div>
+
+<div class="container" id="aboutMeCard">
+  <div class="col-s12-m7">
+    <div class="row">
+      <div class="card horizontal">
+        <div class="card-image" >
+          <img id="myPic" class="responsive-img" src="/images/Screen Shot 2019-03-17 at 8.45.35 PM.png">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content" id="aboutMePara">
+              <p>Thanks for visiting my page!</p>
+              <br>
+              <p>Additional Updates</p>
+              <br>
+              <p>Add Contact Information</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
+  <!--Scroll Down -->
+<div class="container">
+  <div class="row" id="arrows">
+    <div id="downArrow"></div>
+    <div id="downArrow2"></div>
+    <div id="downArrow3"></div>
+  </div>
+</div>
+
+<div class="page" id="portfolio"><h1>Portfolio</h1></div>
+
+<div class="container">
+<div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+          <span class="card-title">NYT React Search</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
+        </div>
+        <div class="card-content">
+          <p>The NYT React Search App allows the user to search for articles that were published on the New York Times website.</p>
+          The application utitlizes React's framework.
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+            <span class="card-title">MongoScrapper</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
+          </div>
+          <div class="card-content">
+            <p>The MongoScrapper App utilizes Mongo and Cheerio to scrape news from other sites.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+              <span class="card-title">LIRI Bot</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
+            </div>
+            <div class="card-content">
+              <p>The LIRI Bot App utilizes NodeJS and allows the user to display Tweets in their Terminals. </p>
+            </div>
+          </div>
+        </div>
+</div>
+<div class="row">
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+          <span class="card-title">Art History Trivia</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
+        </div>
+        <div class="card-content">
+          <p>The Art History Trivia App, the user will be asked a series of multiple choice questions and they will have to submit an answer within the alloted time.
+            The app utilizes HTML, CSS, Javascript and JQuery.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+            <span class="card-title">My Giphys</span>
+            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
+          </div>
+          <div class="card-content">
+            <p>The My Giphys App, the user can search for Giphys and have their search append to the main page as buttons. The user can click on the buttons they created and 
+              have Giphys associated with the button appear on the page. The App was created with Html, CSS, jQuery, 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+              <span class="card-title">Train Scheduler</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
+            </div>
+            <div class="card-content">
+              <p>The Train Scheduler App allows the user to add to Train Schedules into a table. The application utilizes Html, CSS, JavaScript, MomentJS, and Firebase. Click on the link
+                to check out the Github repo</p>
+            </div>
+          </div>
+        </div>
+</div> 
+
+  <!--Scroll Down -->
+  <div class="container">
+    <div class="row" id="arrows">
+      <div id="downArrow"></div>
+      <div id="downArrow2"></div>
+      <div id="downArrow3"></div>
+    </div>
+  </div>
+
+<div class="page" id="contact"><h1>Contact Me</h1></div>
+
+<div class="container">
+   <div class="row">
+    <div class="col s12 m7" id="contactCard">
+      <div class="card-panel" id="cardContent">
+        <span>For additional information, please feel free to email me at Aamir22188@gmail.com.</span>
+        <br>
+        <p>Also check out my Linkdin and Github Pages!</p>
+        <div class="row">
+          <button class="btn waves-effect blue waves-light" type="submit" name="action" id="Linkdin">Linkdin<i class="material-icons right">send</i></button>
+          <button class="btn waves-effect  black waves-light" type="submit" name="action" id="GitHub">GitHub
+            <i class="material-icons right">send</i>
+          </button>     
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+ 
 </body>
+
+<footer>This website was created to display my projects and not with the intent to distribute or sell products.</footer>
+
+
+
 </html>
