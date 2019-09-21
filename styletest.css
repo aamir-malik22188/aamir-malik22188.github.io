@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+    overflow: auto;
+}
+
+body{
+    background-color: #3AAFA9;
+}
+
+#main{
+    text-align: center;
+    width: 100vw;
+}
+
+
+/* Desktop Nav */
+
+.nav-wrapper{
+    background-color: #17252A;
+    display: flex;
+    justify-content: center;
+}
+
+#navTitle{
+    color: #88BDBC;
+    font-size: 1.5rem;
+    margin-left: 50px;
+    margin-right: 50px;
+} 
+
+/* Mobile Nav */
+#mobile-demo{
+    background-color: #17252A;
+}
+
+
+/* Landing Page */
+#landing{
+    padding-top: 75px;
+    height: 100vh;
+    justify-content: center;
+}
+
+#welcomeHeader{
+    margin-top: 10%;
+}
+
+#subTitle{
+    display: flex;
+    justify-content: center;
+}
+
+#subSubTitle{
+    color: #17252A !important;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+li{
+    list-style: none;
+}
+
+/* Portfolio */
+#portfolioSection{
+    padding-top: 75px;
+    height: 100vh;
+}
+
+#cardRow{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Contact Me Section */
+#contactSection{
+    padding-top: 50px;
+    height: 100vh;
+    justify-content: center;
+}
+
+#contactRow{
+    margin: 0 auto;
+}
+
+
+
+/* Down Arrow */
+.downArrow{
+    position: absolute;
+    margin-top: 0%;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+}
+.downArrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #DEF2F1;
+    border-right: 5px solid #DEF2F1;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.downArrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.downArrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+
+
+
+
+
+/* Header/Subtext */
+h2{
+    font-family: 'Abril Fatface', cursive; 
+    color: #FEFFFF;
+    text-shadow: 0px 1px 2px black; 
+}
+
+p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.2rem;
+    color: #17252A;
+}
+
+a{
+    font-family: 'Abril Fatface', cursive; 
+    font-size: 2rem;
+    color: #3AAFA9 !important;
+}
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1025px) {
+
+  }
+
+  @media only screen and (min-width: 1025px) {
+
+}

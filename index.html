@@ -1,203 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Aamir Malik's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aamir Malik's Portfolio</title>
 
-      <!-- Compiled and minified CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- My sheets -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <link rel="stylesheet" href='style.css'>
+  
 
-      <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
-      
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
+<!-- Desktop Nav -->
 <nav>
-  <div class="nav-wrapper">
-    <div class="row">
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="center hide-on-med-and-down">
-        <li><a id=navTitle href="#" data-page="about">About Me</a></li>
-        <li><a id=navTitle href="#" data-page="portfolio">Portfolio</a></li>
-        <li><a id=navTitle href="#" data-page="contact">Contact Me</a></li>
+    <div class="nav-wrapper">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="menuIcon">menu</i></a>
+      <ul id="nav-mobile" class="hide-on-med-and-down">
+          <li><a id="navTitle" href="#landing">Home</a></li>
+          <li><a id="navTitle" href="#portfolio">Portfolio</a></li>
+          <li><a id="navTitle" href="#contact">Contact Me</a></li>
       </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="#" data-page="about">About Me</a></li>
-  <li><a href="#" data-page="portfolio">Portfolio</a></li>
-  <li><a href="#" data-page="contact">Contact</a></li>
-</ul>
-        
-<!-- About Me Information -->
-  <div class="page" id="about"><h1>About Me</h1></div>
+  <ul class="sidenav" id="mobile-demo">
+      <li><a id="mobileTitle" href="#landing">Home</a></li>
+      <li><a id="mobileTitle" href="#portfolio">Portfolio</a></li>
+      <li><a id="mobileTitle" href="#contact">Contact Me</a></li>
+    </ul>
 
-<div class="container" id="aboutMeCard">
-  <div class="col-s12-m7">
-    <div class="row">
-      <div class="card horizontal">
-        <div class="card-image" >
-          <img id="myPic" class="responsive-img" src="/images/Screen Shot 2019-03-17 at 8.45.35 PM.png">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content" id="aboutMePara">
-              <p>Thanks for visiting my page!</p>
-              <br>
-              <p>Additional Updates</p>
-              <br>
-              <p>Add Contact Information</p>
-          </div>
-        </div>
+
+<section id="main">
+
+<!-- Landing Page -->
+<section  id="landing"> 
+  <div class="container-fluid">
+    <div class="row" id="landingContent">
+      <div class="col s12 m4" id="landingImage">
+        <img src="/images/Portfolio.svg" alt="my image" id="myPic">
       </div>
+      <div class="col s12 m4" id="welcomeHeader">
+        <h2>Aamir Malik's Portfolio</h2>
+        <ul id="subTitle">
+          <li><a id="subSubTitle" href="#portfolio">Portfolio</a></li>
+          <li><a id="subSubTitle" href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- About Me Section -->
+
+
+
+
+<!-- Portfolio -->
+<section id="portfolioSection">
+<div class="container-fluid" id="portfolio">
+  <div class="row" id="portfolioHeader">
+    <div class="col s12 m12">
+      <h2 >Portfolio</h2>
+      <p id="instruction">Click on the GitHub icons to see the full repo.</p>
     </div>
   </div>
 </div>
 
-
-  <!--Scroll Down -->
-<div class="container">
-  <div class="row" id="arrows">
-    <div id="downArrow"></div>
-    <div id="downArrow2"></div>
-    <div id="downArrow3"></div>
-  </div>
-</div>
-
-<div class="page" id="portfolio"><h1>Portfolio</h1></div>
-
-<div class="container">
-<div class="row">
-    <div class="col s12 m4">
-      <div class="card">
+<div class="container-fluid" id="cardRow"> 
+  <div class="row">
+    <div class="col s12 m3">
+      <div class="card" id="workCard">
         <div class="card-image">
-          <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-          <span class="card-title">NYT React Search</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
+          <img src="/images/anchorwd-image.png">
+          <a class="btn-floating halfway-fab waves-effect waves-light black" href="http://www.anchorwebdesignservices.com/"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content">
-          <p>The NYT React Search App allows the user to search for articles that were published on the New York Times website.</p>
-          The application utitlizes React's framework.
+            <span class="card-title"><strong>Anchor Web Design Services</strong></span>
+          <p>Anchor Web Design was created to help create and transform websites for various clients.</p>
         </div>
       </div>
     </div>
-    <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-            <span class="card-title">MongoScrapper</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
-          </div>
-          <div class="card-content">
-            <p>The MongoScrapper App utilizes Mongo and Cheerio to scrape news from other sites.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-              <span class="card-title">LIRI Bot</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
-            </div>
-            <div class="card-content">
-              <p>The LIRI Bot App utilizes NodeJS and allows the user to display Tweets in their Terminals. </p>
-            </div>
-          </div>
-        </div>
-</div>
-<div class="row">
-    <div class="col s12 m4">
-      <div class="card">
+    <div class="col s12 m3" id="cardRow">
+      <div class="card" id="workCard">
         <div class="card-image">
-          <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-          <span class="card-title">Art History Trivia</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
+          <img src="/images/anchorwd-image.png">
+          <a class="btn-floating halfway-fab waves-effect waves-light black" href="https://github.com/aamir-malik22188/Train-Schedule"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content">
-          <p>The Art History Trivia App, the user will be asked a series of multiple choice questions and they will have to submit an answer within the alloted time.
-            The app utilizes HTML, CSS, Javascript and JQuery.
-          </p>
-
+          <span class="card-title"><strong>Train Schedule</strong></span>
+          <p>The user in this project is able to add scheduled times for a train. The project utilizes Momentjs and Firebase.</p>
         </div>
       </div>
     </div>
-    <div class="col s12 m4">
-        <div class="card">
-          <div class="card-image">
-            <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-            <span class="card-title">My Giphys</span>
-            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
-          </div>
-          <div class="card-content">
-            <p>The My Giphys App, the user can search for Giphys and have their search append to the main page as buttons. The user can click on the buttons they created and 
-              have Giphys associated with the button appear on the page. The App was created with Html, CSS, jQuery, 
-            </p>
-          </div>
+    <div class="col s12 m3" id="cardRow">
+      <div class="card" id="workCard">
+        <div class="card-image">
+          <img src="/images/anchorwd-image.png">
+          <a class="btn-floating halfway-fab waves-effect waves-light black" href="https://github.com/aamir-malik22188/Train-Schedule"><i class="material-icons">add</i></a>
         </div>
-      </div>
-      <div class="col s12 m4">
-          <div class="card">
-            <div class="card-image">
-              <img src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
-              <span class="card-title">Train Scheduler</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">insert_link</i></a>
-            </div>
-            <div class="card-content">
-              <p>The Train Scheduler App allows the user to add to Train Schedules into a table. The application utilizes Html, CSS, JavaScript, MomentJS, and Firebase. Click on the link
-                to check out the Github repo</p>
-            </div>
-          </div>
-        </div>
-</div> 
-
-  <!--Scroll Down -->
-  <div class="container">
-    <div class="row" id="arrows">
-      <div id="downArrow"></div>
-      <div id="downArrow2"></div>
-      <div id="downArrow3"></div>
-    </div>
-  </div>
-
-<div class="page" id="contact"><h1>Contact Me</h1></div>
-
-<div class="container">
-   <div class="row">
-    <div class="col s12 m7" id="contactCard">
-      <div class="card-panel" id="cardContent">
-        <span>For additional information, please feel free to email me at Aamir22188@gmail.com.</span>
-        <br>
-        <p>Also check out my Linkdin and Github Pages!</p>
-        <div class="row">
-          <button class="btn waves-effect blue waves-light" type="submit" name="action" id="Linkdin">Linkdin<i class="material-icons right">send</i></button>
-          <button class="btn waves-effect  black waves-light" type="submit" name="action" id="GitHub">GitHub
-            <i class="material-icons right">send</i>
-          </button>     
+        <div class="card-content">
+          <span class="card-title"><strong>Train Schedule</strong></span>
+          <p>The user in this project is able to add scheduled times for a train. The project utilizes Momentjs and Firebase.</p>
         </div>
       </div>
     </div>
-  </div>
+
+</div>
+    <!-- <div class="col s12 m2">
+      <div class="card" id="workCard">
+        <div class="card-image">
+          <img src="/images/rawpixel-592447-unsplash.jpg">
+          <a class="btn-floating halfway-fab waves-effect waves-light black" href="https://github.com/aamir-malik22188/liri-node-app"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <span class="card-title"><strong>LIRI Bot - Nodejs</strong></span>
+          <p>LIRI Bot will provide various entertainment results based on what the user is searching for. This app utilizes Nodejs</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m2" >
+      <div class="card" id="workCard">
+        <div class="card-image">
+          <img src="/images/rawpixel-592447-unsplash.jpg">
+          <a class="btn-floating halfway-fab waves-effect waves-light black" href="https://github.com/aamir-malik22188/NYT-React-Search"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title"><strong>Google Books Search - Reactjs</strong></span>
+          <p>The user is able to search for books and save them in MongoDB. The utilizes Reactjs</p>
+        </div>
+      </div>
+    </div> -->
+        <!-- <div class="col s12 m3" id="cardRow">
+      <div class="card" id="workCard">
+        <div class="card-image">
+          <img src="/images/rawpixel-592447-unsplash.jpg">
+          <a class="btn-floating halfway-fab waves-effect waves-light black" href="https://github.com/aamir-malik22188/NYT-React-Search"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+            <span class="card-title"><strong>More Projects Coming</strong></span>
+          <p>The user is able to search for books and save them in MongoDB. The utilizes Reactjs</p>
+        </div>
+      </div>
+
+
+  </div> -->
+
+  <div class="row" id="downArrow">
+      <div class="col s12 m12">
+        <div class="downArrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+
+
+
+<!-- Contact Card -->
+<section id=contactSection>
   
+<div class="container-fluid" id="contact">
+  <div class="row" id="contactTitle">
+    <div class="col s12 m12">
+      <h2>Contact Me</h2>
+    </div>
+  </div> 
 </div>
+
+<div class="container-fluid">   
+  <div class="row">
+      <div class="col s12 m12" id="contactCard">
+        <div class="card-panel">
+            <div class="row">
+                <form id="form">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s8">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <a id="submit" href="">Submit</a>
+                </form>
+              </div>
+
+        </div>
+
+      </div>
+    </div>
 </div>
- 
+
+</section>
+
+</section>
 </body>
-
-<footer>This website was created to display my projects and not with the intent to distribute or sell products.</footer>
-
-
-
 </html>
+
+<!-- <p>I am a Full Stack Developer who has experience in optimizing current business processes
+  that effectively creates efficiencies for the business and the users.
+  I am firm believer of writing clean code and delivering a product to the end user before deadlines.
+  Also, I have 5+ years of experience in a Leadership role and in that role, I was able to manage a team of 30+ teammates and provide guidance to a Pathology Lab of 150+ teammates. 
+  With these attributes, I hope to become an asset to my next team.
+</p> -->

@@ -1,154 +1,152 @@
-/* Splash page CSS */
-#splashBody{
-    background-color: black;
-}
-#logo{
-    justify-content: center;
-    display: flex;
-    padding: 250px 0;
-    color:  gold;
-    font-size: 20em;
-    font-family: 'Nothing You Could Do', cursive;
-    animation: animateLogo 7s infinite;
-}
-@keyframes animateLogo {
-    0%{
-        opacity: 0;
-        transform: translateY(-100px);
-        transform: scale(1,1);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1.5,1.5);
-    }
+html{
+    scroll-behavior: smooth;
+    overflow: auto;
 }
 
-  
-            
-
-/* main html */
-
-div.nav-wrapper{ 
-    background-color: black;
-    width: 100%;
-}
-
-#brandLogo{
-    color: gold;
-    font-size: 4em;
-    left: 500px;
-    animation: brandLogo 3s infinite linear;
-    font-family: 'Nothing You Could Do', cursive;
+body{
+    background-color: #3AAFA9;
 }
 
 
+/* Navbar */
+.nav-wrapper{
+    background-color: #17252A;
+}
 
 #nav-mobile{
-    justify-content: center;
     display: flex;
-    font-family: 'Nothing You Could Do', cursive;
+    justify-content: center;
+    
 }
 
 #navTitle{
-    color: gold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    color: #88BDBC;
+    margin-left: 150%;
 }
 
-/* About Me Section */
-div.page {
-    height:150px;
-    justify-content: center;
-    display: flex;
-    }
-
-#about{
-    justify-content: center;
-    display: flex;
-    font-family: 'Nothing You Could Do', cursive;
+#mobile-demo{
+    background-color: #17252A;
+    text-align: center;
+    width: 50%;
 }
 
-#myPic{
-    float: left;
-    padding: 10px;
+#mobileTitle{
+    color: #88BDBC;
+    font-size:1.2rem;
+    margin-top: 50%;
 }
 
-#aboutMePara{
-    color: black;
-
+/* Landing Page */
+#landing{
+    height: 100vh;
 }
 
-
-
-
-/* portfolio section */
-div.page2 {
-    height:120px;
-    justify-content: center;
-    display: flex;
-    }
-
-#portfolio{
-    justify-content: center;
-    display: flex;
-    font-family: 'Nothing You Could Do', cursive;
+#landingContent{
+    margin-top: 100px;
 }
 
+#landingImage{
+    width: 50vw;
+}
 
- /* Contact section */
- #contact{
-    justify-content: center;
+#welcomeHeader{
+    text-align: center;
+    transform: translate(20%, 50%);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5rem;
+}
+ul{ 
+    white-space:nowrap; 
+    width: 90%;
+} 
+
+#subTitle{
+    margin: 0px;
+}
+
+li{ 
+    display:inline; 
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#subSubTitle{
+    margin-left: 20%;
+    color: white;
+    font-size: 2rem;
+}
+
+/* Portfolio */
+#portfolioSection{
+    height: 100vh;
+    text-align: center;
+  
+}
+
+#portfolioHeader{
+    font-family: 'Abril Fatface', cursive;
+}
+
+#instruction{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#cardRow{
     display: flex;
-    font-family: 'Nothing You Could Do', cursive;
- }
- 
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.card:hover{
+    box-shadow: -10px 10px 10px black;
+}
+
+/* Contact Me */
+#contactSection{
+    height: 75vh;
+    text-align: center;
+}
+
 #contactCard{
-    justify-content: center;
     display: flex;
-    width: 100%;
-}
-
-button{
-    align-content: center;
-    left: 100px;
-}
-
-
- /* Scroll down Animation*/
- #scroll{
-     justify-content: center;
-     display: flex;
-     width: 100%;
- }
-
- #arrows{
     justify-content: center;
-    display: flex;
 }
 
- #downArrow, #downArrow2, #downArrow3{
-     width: 100%;
-     position: absolute;
-     transform: translate(-50%,-50%);
- }
+.card-panel{
+    width: 40%;
+}
 
- #downArrow, #downArrow2, #downArrow3{
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #06A8FF;
-    border-right: 5px solid #06A8FF;
+form{
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Down Arrow */
+.downArrow{
+    position: absolute;
+    margin-top: 0%;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+}
+.downArrow span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #DEF2F1;
+    border-right: 5px solid #DEF2F1;
     transform: rotate(45deg);
-    margin: -10px%;
-    animation: animate 2.2s infinite;
+    margin: -10px;
+    animation: animate 2s infinite;
 }
-#downArrow{
-    animation-delay: -0.1s
+.downArrow span:nth-child(2){
+    animation-delay: -0.2s;
 }
-#downArrow2{
-    animation-delay: -0.5s;
-}
-#downArrow3{
-    animation-delay: -1s;
-    
+.downArrow span:nth-child(3){
+    animation-delay: -0.4s;
 }
 @keyframes animate {
     0%{
@@ -164,11 +162,70 @@ button{
     }
 }
 
-footer{
-    justify-content: center;
-    display: flex;
-    background-color: black;
-    color: white;
-    padding: 75px;
-    font-size: 25px;
+  
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+/* Landing Page */
+    #landingImage{
+        width: 100vw;
+    }
+
+    #landingContent{
+        margin-top: 0px;
+    }
+
+    #welcomeHeader{
+        text-align: center;
+        transform: translate(0%,0%)
+    }
+
+    ul{ 
+        white-space:nowrap; 
+        height: 1em;
+        width: 75%;
+    } 
+
+    li{ 
+        display:inline; 
+    }
+
+    #subSubTitle{
+        margin-left: 20%;
+        color: white;
+    }
+
+/* Portfolio */
+    #portfolioSection{
+        height: 100vh;
+        text-align: center;
+    }
+
+    #cardRow{
+        display: flex;
+        justify-content: center;
+        margin-left: 0%;
+    }
+
+/* Contact Me */
+    #contactSection{
+        height: 75vh;
+        text-align: center;
+    }
+
+    #contactCard{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-panel{
+        width: 100%;
+    }
+
+    form{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+/* End of Media Query */
 }
