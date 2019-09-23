@@ -4,7 +4,11 @@ html{
 }
 
 body{
-    background-color: #3AAFA9;
+    background: url(/images/background.jpg)  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -22,7 +26,7 @@ body{
 #navTitle{
     font-size: 1.5rem;
     color: #88BDBC;
-    margin-left: 150%;
+    margin-left: 20%;
 }
 
 #mobile-demo{
@@ -33,7 +37,7 @@ body{
 
 #mobileTitle{
     color: #88BDBC;
-    font-size:1.2rem;
+    font-size: 2rem;
     margin-top: 50%;
 }
 
@@ -78,7 +82,7 @@ li{
 
 /* Portfolio */
 #portfolioSection{
-    height: 100vh;
+    height: 75rem;
     text-align: center;
   
 }
@@ -100,12 +104,15 @@ li{
 }
 
 .card:hover{
-    box-shadow: -10px 10px 10px black;
+    box-shadow: 1px 1px 2px #17252A, 0 0 25px white, 0 0 5px #17252A;
 }
+
+
+
 
 /* Contact Me */
 #contactSection{
-    height: 75vh;
+    height: 50rem;
     text-align: center;
 }
 
@@ -116,21 +123,25 @@ li{
 
 .card-panel{
     width: 40%;
-}
+} 
 
-form{
+#contact-form{
     padding: 20px;
     width: 90%;
     text-align: center;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+#submit{
+    font-size: 2rem;
+}
+
 /* Down Arrow */
 .downArrow{
     position: absolute;
-    margin-top: 0%;
+    margin-top: 5%;
     left: 50vw;
-    transform: translate(-50%,-50%);
+    transform: translate(0%,0%);
 }
 .downArrow span{
     display: block;
@@ -175,7 +186,8 @@ form{
 
     #welcomeHeader{
         text-align: center;
-        transform: translate(0%,0%)
+        transform: translate(0%,-15%);
+        font-size: 2rem;
     }
 
     ul{ 
@@ -195,20 +207,19 @@ form{
 
 /* Portfolio */
     #portfolioSection{
-        height: 100vh;
+        height: 25rem;
         text-align: center;
     }
 
     #cardRow{
-        display: flex;
-        justify-content: center;
         margin-left: 0%;
     }
 
 /* Contact Me */
     #contactSection{
-        height: 75vh;
+        height: 0rem;
         text-align: center;
+        margin-top: 350%;
     }
 
     #contactCard{
@@ -220,7 +231,7 @@ form{
         width: 100%;
     }
 
-    form{
+    #contact-form{
         padding: 10px;
         width: 100%;
         text-align: center;
@@ -228,4 +239,79 @@ form{
 
 
 /* End of Media Query */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+ /* Landing Page */
+    #landingImage{
+        width: 100vw;
+        height: 20vh;
+    }
+
+    #landingContent{
+        margin-top: 0px;
+    }
+
+    #welcomeHeader{
+        text-align: center;
+        transform: translate(0%,0%);
+        font-size: 2rem;
+        width: 35%;
+    }
+
+    ul{ 
+        white-space:nowrap; 
+        height: 1em;
+        width: 75%;
+    } 
+
+    li{ 
+        display:inline; 
+    }
+
+    #subSubTitle{
+        margin-left: 20%;
+        color: white;
+    }
+
+/* Portfolio */
+    #portfolioSection{
+        height: 0rem;
+        text-align: center;
+    }
+
+    #cardRow{
+        margin-left: 10%;
+    }
+
+    #workCard{
+        width: 100%;
+    }
+
+
+
+
+/* Contact Me */
+    #contactSection{
+        height: 10rem;
+        text-align: center;
+        margin-top: 100%;
+    }
+
+    #contactCard{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-panel{
+        width: 50%;
+    }
+
+    #contact-form{
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+/* End Media Query */
 }
