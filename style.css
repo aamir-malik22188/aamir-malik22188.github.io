@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background: url(/images/background.jpg)  no-repeat center center fixed;
+    background: url(/images/Portfolio-background.png)  no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,7 +14,7 @@ body{
 
 /* Navbar */
 .nav-wrapper{
-    background-color: #17252A;
+    background-color: #000000;
 }
 
 #nav-mobile{
@@ -24,19 +24,19 @@ body{
 }
 
 #navTitle{
-    font-size: 1.5rem;
-    color: #88BDBC;
+    font-size: 3rem;
+    color: #970000;
     margin-left: 20%;
 }
 
 #mobile-demo{
-    background-color: #17252A;
+    background-color: #000000;
     text-align: center;
     width: 50%;
 }
 
 #mobileTitle{
-    color: #88BDBC;
+    color: #970000;
     font-size: 2rem;
     margin-top: 50%;
 }
@@ -44,19 +44,20 @@ body{
 /* Landing Page */
 #landing{
     height: 100vh;
+    width: 100vw;
 }
 
 #landingContent{
-    margin-top: 100px;
+    margin-top: 0px;
 }
 
-#landingImage{
-    width: 50vw;
+#myPic{
+    width: 100%;
 }
 
 #welcomeHeader{
     text-align: center;
-    transform: translate(20%, 50%);
+    transform: translate(0%, 50%);
     font-family: 'Abril Fatface', cursive;
     font-size: 5rem;
 }
@@ -76,15 +77,15 @@ li{
 
 #subSubTitle{
     margin-left: 20%;
-    color: white;
+    color: #970000 !important;
     font-size: 2rem;
 }
 
 /* Portfolio */
 #portfolioSection{
-    height: 75rem;
+    height: 100vh;
     text-align: center;
-  
+
 }
 
 #portfolioHeader{
@@ -93,18 +94,36 @@ li{
 
 #instruction{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: white;
+    color: #970000;
     font-size: 1.5rem;
 }
 
 #cardRow{
     display: flex;
     justify-content: center;
-    margin-left: 5%;
 }
 
-.card:hover{
-    box-shadow: 1px 1px 2px #17252A, 0 0 25px white, 0 0 5px #17252A;
+#workCard{
+    margin-left: 5%;
+    background-color: white;
+    color: black;
+    border: solid black;
+    font-size: 1rem;
+}
+
+.card-title{
+    text-decoration: underline #970000;
+}
+
+.card-image{
+    border: solid black;
+}
+
+#port-background{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    /* transform: translate(-20%,40%); */
 }
 
 
@@ -112,66 +131,20 @@ li{
 
 /* Contact Me */
 #contactSection{
-    height: 50rem;
     text-align: center;
 }
 
 #contactCard{
     display: flex;
     justify-content: center;
+    border-style: none;
 }
 
-.card-panel{
-    width: 40%;
-} 
-
-#contact-form{
-    padding: 20px;
-    width: 90%;
-    text-align: center;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+#contactInfo{
+    color: black;
+    font-size: 1.2rem;
 }
 
-#submit{
-    font-size: 2rem;
-}
-
-/* Down Arrow */
-.downArrow{
-    position: absolute;
-    margin-top: 5%;
-    left: 50vw;
-    transform: translate(0%,0%);
-}
-.downArrow span{
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid #DEF2F1;
-    border-right: 5px solid #DEF2F1;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-.downArrow span:nth-child(2){
-    animation-delay: -0.2s;
-}
-.downArrow span:nth-child(3){
-    animation-delay: -0.4s;
-}
-@keyframes animate {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
-}
 
   
 @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
@@ -180,13 +153,18 @@ li{
         width: 100vw;
     }
 
+    #myPic{
+        width: 100%;
+    }
+
     #landingContent{
         margin-top: 0px;
     }
 
     #welcomeHeader{
+        z-index: 1;
         text-align: center;
-        transform: translate(0%,-15%);
+        transform: translate(0%, -25%);
         font-size: 2rem;
     }
 
@@ -207,8 +185,7 @@ li{
 
 /* Portfolio */
     #portfolioSection{
-        height: 25rem;
-        text-align: center;
+        text-align: center; 
     }
 
     #cardRow{
@@ -217,9 +194,8 @@ li{
 
 /* Contact Me */
     #contactSection{
-        height: 0rem;
         text-align: center;
-        margin-top: 350%;
+        margin-top: 300%;
     }
 
     #contactCard{
@@ -227,14 +203,8 @@ li{
         justify-content: center;
     }
 
-    .card-panel{
-        width: 100%;
-    }
-
-    #contact-form{
-        padding: 10px;
-        width: 100%;
-        text-align: center;
+    #contactCard img{
+        margin-top: 100px;
     }
 
 
@@ -242,76 +212,65 @@ li{
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
- /* Landing Page */
-    #landingImage{
-        width: 100vw;
-        height: 20vh;
-    }
+/* Landing Page */
+#landingImage{
+    width: 100vw;
+}
 
-    #landingContent{
-        margin-top: 0px;
-    }
+#myPic{
+    width: 100%;
+}
 
-    #welcomeHeader{
-        text-align: center;
-        transform: translate(0%,0%);
-        font-size: 2rem;
-        width: 35%;
-    }
+#landingContent{
+    margin-top: 0px;
+}
 
-    ul{ 
-        white-space:nowrap; 
-        height: 1em;
-        width: 75%;
-    } 
+#welcomeHeader{
+    z-index: 1;
+    text-align: center;
+    transform: translate(0%, -25%);
+    font-size: 2rem;
+}
 
-    li{ 
-        display:inline; 
-    }
+ul{ 
+    white-space:nowrap; 
+    height: 1em;
+    width: 75%;
+} 
 
-    #subSubTitle{
-        margin-left: 20%;
-        color: white;
-    }
+li{ 
+    display:inline; 
+}
+
+#subSubTitle{
+    margin-left: 20%;
+    color: white;
+}
 
 /* Portfolio */
-    #portfolioSection{
-        height: 0rem;
-        text-align: center;
-    }
+#portfolioSection{
+    text-align: center; 
+}
 
-    #cardRow{
-        margin-left: 10%;
-    }
-
-    #workCard{
-        width: 100%;
-    }
-
-
-
+#cardRow{
+    margin-left: 0%;
+}
 
 /* Contact Me */
-    #contactSection{
-        height: 10rem;
-        text-align: center;
-        margin-top: 100%;
-    }
+#contactSection{
+    text-align: center;
+    margin-top: 300%;
+}
 
-    #contactCard{
-        display: flex;
-        justify-content: center;
-    }
+#contactCard{
+    display: flex;
+    justify-content: center;
+}
 
-    .card-panel{
-        width: 50%;
-    }
+#contactCard img{
+    margin-top: 100px;
+}
 
-    #contact-form{
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
 
 /* End Media Query */
 }
