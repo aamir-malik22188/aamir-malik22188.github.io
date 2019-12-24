@@ -33,7 +33,7 @@
 <body>
 
 <!-- Desktop Nav -->
-<nav>
+<nav id="navbar">
     <div class="nav-wrapper" >
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="menuIcon">menu</i></a>
       <ul id="nav-mobile" class="hide-on-med-and-down">
@@ -49,18 +49,19 @@
       <li><a id="mobileTitle" href="#portfolio">Portfolio</a></li>
       <li><a id="mobileTitle" href="#contact">Contact Me</a></li>
     </ul>
-
+<main>
 
 <section id="main">
+
 
 <!-- Landing Page -->
 <section  id="landing"> 
   <div class="container-fluid">
     <div class="row" id="landingContent">
-      <div class="col s12 m4 l6" id="landingImage">
+      <div class="col s12 m12 l6">
         <img src="/images/Portfolio.png" alt="my image" id="myPic">
       </div>
-      <div class="col s12 m4 l4" id="welcomeHeader">
+      <div class="col s12 m12 l5" id="welcomeHeader">
         <h2>Aamir Malik's Portfolio</h2>
         <ul id="subTitle">
           <li><a id="subSubTitle" href="#portfolio">Portfolio</a></li>
@@ -83,19 +84,19 @@
 <div class="container-fluid" id="portfolio">
   <div class="row" id="portfolioHeader">
     <div class="col s12 m12">
-      <h2 >Portfolio</h2>
-      <p id="instruction">Click on the GitHub icons to see the full repo.</p>
+      <h1>Portfolio</h1>
+      <p id="instruction">Click on the "+" to visit the website and/or GitHub page</p>
     </div>
   </div>
 </div>
 
 <div class="container-fluid" id="cardRow"> 
   <div class="row">
-    <div class="col s12 m3">
+    <div class="col s11 m4">
       <div class="card" id="workCard">
         <div class="card-image">
           <img src="/images/anchorwd-image.png">
-          <a class="btn-floating halfway-fab waves-effect waves-light black" href="http://www.anchorwebdesignservices.com/"><i class="material-icons">add</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light grey darken-4" href="http://www.anchorwebdesignservices.com/"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content">
             <span class="card-title"><strong>Anchor Web Design Services</strong></span>
@@ -103,11 +104,11 @@
         </div>
       </div>
     </div>
-    <div class="col s12 m3" id="cardRow">
+    <div class="col s11 m4" id="cardRow">
       <div class="card" id="workCard">
         <div class="card-image">
           <img src="/images/train.jpeg">
-          <a class="btn-floating halfway-fab waves-effect waves-light black" href="https://github.com/aamir-malik22188/Train-Schedule"><i class="material-icons">add</i></a>
+          <a class="btn-floating halfway-fab waves-effect waves-light grey darken-4" href="https://github.com/aamir-malik22188/Train-Schedule"><i class="material-icons">add</i></a>
         </div>
         <div class="card-content">
           <span class="card-title"><strong>Train Schedule</strong></span>
@@ -115,19 +116,8 @@
         </div>
       </div>
     </div>
-    <div class="col s12 m3" id="cardRow">
-      <div class="card" id="workCard">
-        <div class="card-image">
-          <img src="/images/joanna-kosinska-129039-unsplash.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title"><strong>Coming Soon</strong></span>
-          <p>Stay Tuned! More projects will be linked here once completed!</p>
-        </div>
-      </div>
-    </div>
+  </div> 
 </div>
-
 </section>
 
 
@@ -142,25 +132,38 @@
   </div> 
 </div>
 
-
-
 <div class="container-fluid">   
   <div class="row">
-      <div class="col s12 m12" id="contactCard">
-            <div class="row" id="contactInfo">
-              <span>E-Mail Address: Aamir22188@gmail.com</span><br>
-              <span>Phone Number: (469) 665-9428</span>
-            </div>
-            <img id="port-background" src="/images/portfolio backdrop.svg">
+      <div class="col s12 m6" id="contactCard">
+          <p>E-Mail Address: Aamir22188@gmail.com</p>
+          <br>
+          <p>Phone Number: (469) 665-9428</p>
       </div>
-      
+      <div class="col s12 m6" id="watch">
+          <!-- <p>**Time is current time**</p> -->
+          <img src="/images/Portfolio-watch.png" alt="portfolio watch" id="portfolio-watch">
+      </div>
     </div>
 </div>
 
-
 </section>
 
-</section>
+<!-- Footer -->
+  <div class="container-fluid" id="footer">
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m12">
+            <h5 class="white-text">Aamir Malik's Portfolio</h5>
+            <p class="grey-text text-lighten-4">Images presented on this website were designed and created by Aamir Malik for Portfolio purposes</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+</main>
 </body>
 </html>
 

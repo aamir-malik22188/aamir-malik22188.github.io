@@ -9,12 +9,34 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
+main {
+    flex: 1 0 auto;
+  }
+    
+
+section{
+    height: 100vh;
+}
 
 /* Navbar */
+nav{
+    background-color: inherit !important;
+    height: 0px !important;
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    display: block;
+    transition: top 2s;
+}
+
 .nav-wrapper{
     background-color: #000000;
+    float: right;
 }
 
 #nav-mobile{
@@ -24,15 +46,20 @@ body{
 }
 
 #navTitle{
-    font-size: 3rem;
-    color: #970000;
-    margin-left: 20%;
+    font-size: 2rem;
+    color: rgb(151, 0, 0);
+}
+
+#navTitle:hover{
+    text-decoration: underline black;
+    background-color: inherit;
 }
 
 #mobile-demo{
     background-color: #000000;
     text-align: center;
     width: 50%;
+    
 }
 
 #mobileTitle{
@@ -41,14 +68,16 @@ body{
     margin-top: 50%;
 }
 
-/* Landing Page */
-#landing{
-    height: 100vh;
-    width: 100vw;
+#menuIcon{
+    color: rgb(151, 0, 0);
 }
 
+/* Landing Page */
+#landing{
+    height: auto;
+}
 #landingContent{
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 #myPic{
@@ -57,9 +86,9 @@ body{
 
 #welcomeHeader{
     text-align: center;
-    transform: translate(0%, 50%);
+    transform: translate(0%, 100%);
     font-family: 'Abril Fatface', cursive;
-    font-size: 5rem;
+    font-size: 6rem;
 }
 ul{ 
     white-space:nowrap; 
@@ -78,14 +107,16 @@ li{
 #subSubTitle{
     margin-left: 20%;
     color: #970000 !important;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 /* Portfolio */
 #portfolioSection{
-    height: 100vh;
-    text-align: center;
-
+    background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -175px left 500px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 1100px;
 }
 
 #portfolioHeader{
@@ -98,67 +129,64 @@ li{
     font-size: 1.5rem;
 }
 
-#cardRow{
-    display: flex;
-    justify-content: center;
-}
-
 #workCard{
     margin-left: 5%;
     background-color: white;
     color: black;
     border: solid black;
     font-size: 1rem;
+    height: 50%;
 }
 
 .card-title{
-    text-decoration: underline #970000;
+    text-decoration: underline rgb(151, 0, 0);
 }
 
 .card-image{
     border: solid black;
 }
 
-#port-background{
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    /* transform: translate(-20%,40%); */
-}
-
-
-
-
 /* Contact Me */
 #contactSection{
     text-align: center;
+    height: 100vh !important;
 }
 
-#contactCard{
-    display: flex;
-    justify-content: center;
-    border-style: none;
+#contactTitle{
+    font-family: 'Abril Fatface', cursive;
 }
 
-#contactInfo{
-    color: black;
-    font-size: 1.2rem;
+#contactCard p{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;  
+}
+
+#portfolio-watch{
+    margin-top: 10px;
+}
+
+/* Footer */
+.page-footer{
+    background-color: black !important;
+
 }
 
 
-  
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+
 /* Landing Page */
-    #landingImage{
-        width: 100vw;
+    #landing{
+        height: 100%;
+    }
+    #landingContent{
+        margin-top: 25px;
     }
 
     #myPic{
-        width: 100%;
-    }
-
-    #landingContent{
-        margin-top: 0px;
+    width: 100%;
     }
 
     #welcomeHeader{
@@ -181,40 +209,48 @@ li{
     #subSubTitle{
         margin-left: 20%;
         color: white;
+        font-size: 2rem;
     }
 
 /* Portfolio */
-    #portfolioSection{
-        text-align: center; 
-    }
-
-    #cardRow{
-        margin-left: 0%;
-    }
-
-/* Contact Me */
-    #contactSection{
-        text-align: center;
-        margin-top: 300%;
-    }
-
-    #contactCard{
-        display: flex;
-        justify-content: center;
-    }
-
-    #contactCard img{
-        margin-top: 100px;
-    }
-
-
-/* End of Media Query */
+#portfolioSection{
+    background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -10px left 0px fixed;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: 500px;
+    height: auto;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  
+/* Contact Me */
+#contactSection{
+    text-align: center;
+    height: 90vh !important;
+}
+
+#contactTitle{
+    font-family: 'Abril Fatface', cursive;
+}
+
+#contactCard p{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10px;  
+}
+
+#portfolio-watch{
+    width: 80%;
+}
+
+/* End of Media Query 320px */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
 /* Landing Page */
 #landingImage{
-    width: 100vw;
+    width: 100%;
 }
 
 #myPic{
@@ -228,8 +264,9 @@ li{
 #welcomeHeader{
     z-index: 1;
     text-align: center;
-    transform: translate(0%, -25%);
+    transform: translate(0%, -225%);
     font-size: 2rem;
+    color: white;
 }
 
 ul{ 
@@ -245,32 +282,137 @@ li{
 #subSubTitle{
     margin-left: 20%;
     color: white;
+    font-size: 2.5rem;
 }
 
 /* Portfolio */
 #portfolioSection{
-    text-align: center; 
+background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -100px left 0px fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: 768px;
 }
 
-#cardRow{
-    margin-left: 0%;
-}
 
 /* Contact Me */
 #contactSection{
+text-align: center;
+height: 75vh !important;
+}
+
+#contactTitle{
+font-family: 'Abril Fatface', cursive;
+}
+
+#contactCard p{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+text-align: center;
+}
+
+#portfolio-watch{
+    width: 75%;
+}
+
+/* End of Media Query 768px */
+
+}
+
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1279px){ 
+/* Landing Page */
+#myPic{
+    width: 100vw;
+}
+
+#landingContent{
+    margin-top: 10px;
+}
+
+#welcomeHeader{
+    z-index: 1;
     text-align: center;
-    margin-top: 300%;
+    transform: translate(-50%, 500%);
+    font-size: 3rem;
+    color: white;
 }
 
-#contactCard{
-    display: flex;
-    justify-content: center;
+ul{ 
+    white-space:nowrap; 
+    height: .5em;
+    width: 75%;
+} 
+
+li{ 
+    display:inline; 
 }
 
-#contactCard img{
-    margin-top: 100px;
+#subSubTitle{
+    margin-left: 20%;
+    color: white;
+    font-size: 3rem;
 }
 
+/* Portfolio */
+#portfolioSection{
+    background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -100px left 0px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 1024px;
+    }
 
-/* End Media Query */
+    #contactSection{
+        text-align: center;
+        height: 75vh !important;
+        }
+/* End of Media Query 1024px */
+
+
 }
+
+@media only screen and (min-device-width : 1280px) and (max-device-width : 1500px){ 
+    /* Landing Page */
+    #myPic{
+        width: 100%;
+    }
+    
+    #landingContent{
+        margin-top: 10px;
+    }
+    
+    #welcomeHeader{
+        z-index: 1;
+        text-align: center;
+        transform: translate(0%, 150%);
+        font-size: 3rem;
+    }
+    
+    ul{ 
+        white-space:nowrap; 
+        height: .5em;
+        width: 75%;
+    } 
+    
+    li{ 
+        display:inline; 
+    }
+    
+    #subSubTitle{
+        margin-left: 20%;
+        color: white;
+        font-size: 3rem;
+    }
+    
+    /* Portfolio */
+    #portfolioSection{
+        background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -100px left 500px fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 1024px;
+        }
+    /* End of Media Query 1024px */
+    
+    
+    }
