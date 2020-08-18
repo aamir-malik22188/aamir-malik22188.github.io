@@ -1,14 +1,21 @@
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
- 
+// Projects to list
+    // Train Project
+    // Node JS project
+    // Covid Project
+    // XML to Json Converter
 
-window.onscroll = function() {scrollFunction()};
+const next = document.querySelector("#next");
+const previous = document.querySelector("#previous");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
+function handleScrollNext (direction) {
+    const cards = document.querySelector('.con-cards')
+    cards.scrollLeft = cards.scrollLeft += window.innerWidth /2 > 600 ? window.innerWidth / 2 : window.innerWidth -100
 }
+
+function handleScrollPrevious (direction) {
+    const cards = document.querySelector('.con-cards')
+    cards.scrollLeft = cards.scrollLeft += window.innerWidth /2 > 600 ? window.innerWidth / 2 : window.innerWidth -100
+}
+
+next.addEventListener('click', handleScrollNext);
+previous.addEventListener('click', handleScrollPrevious);

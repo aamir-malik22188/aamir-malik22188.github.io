@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background: url(/images/Portfolio-background.png)  no-repeat center center fixed;
+    background-color: rgb(255,255,255);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -74,59 +74,254 @@ nav{
 
 /* Landing Page */
 #landing{
-    height: auto;
+    /* height: 100vh; */
 }
 #landingContent{
-    margin-top: 10px;
+    margin-top: 200px;
 }
 
-#myPic{
-    width: 100%;
-}
 
 #welcomeHeader{
     text-align: center;
-    transform: translate(0%, 100%);
+    transform: translate(0%, 0%);
     font-family: 'Abril Fatface', cursive;
-    font-size: 6rem;
+    font-size: 1.5rem;
 }
 ul{ 
-    white-space:nowrap; 
-    width: 90%;
+    white-space:nowrap;
+    width: 100%;
 } 
 
-#subTitle{
-    margin: 0px;
-}
-
-li{ 
-    display:inline; 
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
 #subSubTitle{
-    margin-left: 20%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #970000 !important;
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 5rem;
 }
 
-/* Portfolio */
-#portfolioSection{
-    background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -175px left 500px fixed;
+/* About Me */
+#aboutMe {
+    position: absolute;
+    overflow: hidden;       
+}
+
+#aboutMe {
+    padding: 0px;
+    position: relative;
+     z-index: 2;
+}
+
+#aboutMe img {
+    position: absolute;
+    left: 6%;
+    top: 0;
+    width: auto;
+    height: 100vh;
+    opacity: 0.1;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 1100px;
 }
 
+p{
+    font-size: 1.2rem;
+}
+
+
+#attributes{
+    display: flex;
+    justify-self: center;
+}
+
+/* Portfolio */
 #portfolioHeader{
     font-family: 'Abril Fatface', cursive;
 }
 
-#instruction{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: #970000;
-    font-size: 1.5rem;
+.over-lay{
+    color: red;
+    position: relative;
+}
+
+#card{
+   width: 300px;
+   min-width: 300px;
+   height: auto;
+   background: #fff;
+   border-radius: 30px;
+   position: relative;
+   z-index: 10;
+   margin: 25px;
+   min-height: 356px;
+   transition: all .25s ease;
+   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
+   cursor: pointer;
+
+}
+
+#card:hover{
+    transform: translate(0, -10px);
+    box-shadow: 17px 35px 0px rgba(0,0,0, .07);
+}
+
+.card:hover {
+    transform: translate(0, -15px);
+
+}
+
+.card:hover img.projectImage{
+    opacity: .45;
+    transform: translate (-10px, 26px) scale (.85);
+}
+
+#card h2{
+    position: absolute;
+    font-family: 'oswald', sans-serif;
+    left: 0px;
+    top: 0px;
+    padding: 15px;
+}
+
+#card i.bx {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+
+#card con-text{
+    padding: 20px;
+}
+
+p{
+    font-family: 'Montessrat', sans-serif;
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+#card con-img{
+    width: calc(100% -60px);
+    margin: 0px 30px;
+    margin-top: -90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-out;
+
+}
+
+#card img{
+    height: 300px;
+}
+
+.card img.blur{
+    position: absolute;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: .35;
+    transform: translate (-10px, 10px) scale (0.85);
+    transition: all .35s ease-out;
+}
+
+.con-cards{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: auto;
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 50px;
+    scroll-behavior: smooth;
+}
+
+.con-cards::-webkit-scrollbar{
+    height: 0px;
+}
+
+.con-cards:after{
+    content: '';
+    display: block;
+    min-width: 20px;
+    height: 100px;
+    position: relative;
+}
+
+.btn{
+    min-width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background: #fff;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    z-index: 200;
+    margin: 10px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.08);
+    transition: all .25s ease;
+}
+
+.btn:hover{
+    transform: translate (0, -10px);
+    box-shadow: 0px 17px 35px 0px rgba(0,0,0,0.07);
+}
+
+.btn i {
+    font-size: 1.6rem;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(242, 243, 248);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.content:after{
+    content: '';
+    left: 90px;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    z-index: 100;
+    background: linear-gradient(90deg, rgb(242, 243, 248) 0%,
+    rgba(242, 243, 248, 0) 100%);
+    pointer-events: none;
+}
+
+.content:before{
+    content: '';
+    pointer-events: none;
+    right: 80px;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    z-index: 100;
+    background: linear-gradient(90deg, rgba(242, 243, 248, 0) 0%, 
+    rgba(242, 243, 248, 1) 100%);
+}
+
+
+#backgroundSquare{
+    min-width: 60%;
+    height: 50%;
+    left: 150px;
+    background-color: rgb(151, 0, 0);
+    z-index: 0;
+    position: absolute;
+}
+
+#backgroundSquare::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 #workCard{
@@ -146,273 +341,14 @@ li{
     border: solid black;
 }
 
+
 /* Contact Me */
-#contactSection{
-    text-align: center;
-    height: 100vh !important;
-}
 
-#contactTitle{
-    font-family: 'Abril Fatface', cursive;
-}
-
-#contactCard p{
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 10px;  
-}
-
-#portfolio-watch{
-    margin-top: 10px;
-}
 
 /* Footer */
 .page-footer{
     background-color: black !important;
-
-}
-
-
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
-
-/* Landing Page */
-    #landing{
-        height: 100%;
-    }
-    #landingContent{
-        margin-top: 25px;
-    }
-
-    #myPic{
-    width: 100%;
-    }
-
-    #welcomeHeader{
-        z-index: 1;
-        text-align: center;
-        transform: translate(0%, -25%);
-        font-size: 2rem;
-    }
-
-    ul{ 
-        white-space:nowrap; 
-        height: 1em;
-        width: 75%;
-    } 
-
-    li{ 
-        display:inline; 
-    }
-
-    #subSubTitle{
-        margin-left: 20%;
-        color: white;
-        font-size: 2rem;
-    }
-
-/* Portfolio */
-#portfolioSection{
-    background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -10px left 0px fixed;
-    -webkit-background-size: auto;
-    -moz-background-size: auto;
-    -o-background-size: auto;
-    background-size: 500px;
-    height: auto;
-}
-
-  
-/* Contact Me */
-#contactSection{
     text-align: center;
-    height: 90vh !important;
-}
-
-#contactTitle{
-    font-family: 'Abril Fatface', cursive;
-}
-
-#contactCard p{
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  text-align: center;
-  font-size: 2rem;
-  margin-top: 10px;  
-}
-
-#portfolio-watch{
-    width: 80%;
-}
-
-/* End of Media Query 320px */
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
-/* Landing Page */
-#landingImage{
-    width: 100%;
-}
-
-#myPic{
-    width: 100%;
-}
-
-#landingContent{
-    margin-top: 0px;
-}
-
-#welcomeHeader{
-    z-index: 1;
-    text-align: center;
-    transform: translate(0%, -225%);
-    font-size: 2rem;
-    color: white;
-}
-
-ul{ 
-    white-space:nowrap; 
-    height: 1em;
-    width: 75%;
-} 
-
-li{ 
-    display:inline; 
-}
-
-#subSubTitle{
-    margin-left: 20%;
-    color: white;
-    font-size: 2.5rem;
-}
-
-/* Portfolio */
-#portfolioSection{
-background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -100px left 0px fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: 768px;
 }
 
 
-/* Contact Me */
-#contactSection{
-text-align: center;
-height: 75vh !important;
-}
-
-#contactTitle{
-font-family: 'Abril Fatface', cursive;
-}
-
-#contactCard p{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-text-align: center;
-}
-
-#portfolio-watch{
-    width: 75%;
-}
-
-/* End of Media Query 768px */
-
-}
-
-
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1279px){ 
-/* Landing Page */
-#myPic{
-    width: 100vw;
-}
-
-#landingContent{
-    margin-top: 10px;
-}
-
-#welcomeHeader{
-    z-index: 1;
-    text-align: center;
-    transform: translate(-50%, 500%);
-    font-size: 3rem;
-    color: white;
-}
-
-ul{ 
-    white-space:nowrap; 
-    height: .5em;
-    width: 75%;
-} 
-
-li{ 
-    display:inline; 
-}
-
-#subSubTitle{
-    margin-left: 20%;
-    color: white;
-    font-size: 3rem;
-}
-
-/* Portfolio */
-#portfolioSection{
-    background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -100px left 0px fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: 1024px;
-    }
-
-    #contactSection{
-        text-align: center;
-        height: 75vh !important;
-        }
-/* End of Media Query 1024px */
-
-
-}
-
-@media only screen and (min-device-width : 1280px) and (max-device-width : 1500px){ 
-    /* Landing Page */
-    #myPic{
-        width: 100%;
-    }
-    
-    #landingContent{
-        margin-top: 10px;
-    }
-    
-    #welcomeHeader{
-        z-index: 1;
-        text-align: center;
-        transform: translate(0%, 150%);
-        font-size: 3rem;
-    }
-    
-    ul{ 
-        white-space:nowrap; 
-        height: .5em;
-        width: 75%;
-    } 
-    
-    li{ 
-        display:inline; 
-    }
-    
-    #subSubTitle{
-        margin-left: 20%;
-        color: white;
-        font-size: 3rem;
-    }
-    
-    /* Portfolio */
-    #portfolioSection{
-        background: url(/images/portfolio\ backdrop.png) no-repeat  bottom -100px left 500px fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: 1024px;
-        }
-    /* End of Media Query 1024px */
-    
-    
-    }

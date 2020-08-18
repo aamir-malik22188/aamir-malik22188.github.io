@@ -11,7 +11,9 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script> 
+
   <script type="text/javascript" src="app.js"></script>
+
   <link rel="stylesheet" href='style.css'>
   
 
@@ -38,7 +40,8 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="menuIcon">menu</i></a>
       <ul id="nav-mobile" class="hide-on-med-and-down">
           <li><a id="navTitle" href="#landing">Home</a></li>
-          <li><a id="navTitle" href="#portfolioSection">Portfolio</a></li>
+          <li><a id="navTitle" href="#aboutMe">About Me</a></li>
+          <li><a id="navTitle" href="#portfolio">Portfolio</a></li>
           <li><a id="navTitle" href="#contact">Contact Me</a></li>
       </ul>
     </div>
@@ -46,6 +49,7 @@
 
   <ul class="sidenav" id="mobile-demo">
       <li><a id="mobileTitle" href="#landing">Home</a></li>
+      <li><a id="mobileTitle" href="#aboutMe">About Me</a></li>
       <li><a id="mobileTitle" href="#portfolio">Portfolio</a></li>
       <li><a id="mobileTitle" href="#contact">Contact Me</a></li>
     </ul>
@@ -58,13 +62,11 @@
 <section  id="landing"> 
   <div class="container-fluid">
     <div class="row" id="landingContent">
-      <div class="col s12 m12 l6">
-        <img src="/images/Portfolio.png" alt="my image" id="myPic">
-      </div>
       <div class="col s12 m12 l5" id="welcomeHeader">
         <h2>Aamir Malik's Portfolio</h2>
         <ul id="subTitle">
-          <li><a id="subSubTitle" href="#portfolio">Portfolio</a></li>
+          <li><a id="subSubTitle" href="#aboutMe">About Me</a></li>
+          <li><a id="subSubTitle" href="#portfolioSection">Portfolio</a></li>
           <li><a id="subSubTitle" href="#contact">Contact Me</a></li>
         </ul>
       </div>
@@ -74,9 +76,54 @@
 </section>
 
 <!-- About Me Section -->
+<section id="aboutMe">
+  <div class="container-fluid">
+    <img src="/images/Portfolio.png">
+  </div>
 
+  <div class="container-fluid" id="portfolio">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h1 id="portfolioHeader">About Me</h1>
+        <p>I am a Full Stack Developer who has experience in optimizing current business processes
+          that effectively creates efficiencies for the business and the users.
+          I am firm believer of writing clean code and delivering a product to the end user before deadlines.
+          Also, I have 5+ years of experience in a Leadership role and in that role, I was able to manage a team of 30+ teammates and provide guidance to a Pathology Lab of 150+ teammates. 
+          With these attributes, I hope to become an asset to my next team.
+        </p>
+      </div>
+    </div>
+  </div>  
 
+<div class="container-fluid">
+  <div class='row'>
+    <div class="col s6 m6" id="attributes">
+      <ul>
+        <li>Developer Technologies<li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Bootstrap</li>
+        <li>MaterializeUI</li>
+        <li>JavaScript</li>
+        <li>ReactJS</li>
+        <li>NodeJs</li>
+      </ul>
+    </div>
+    <div class="col s6 m6 l6" id="attributes">
+      <ul>
+        <li>Other Technologies</li>
+        <li>mongoDB</li>
+        <li><mySQL</li>
+        <li>Azure DevOps</li>
+        <li>Azure Service Bus</li>
+        <li>Postman</li>
+        <li>Github</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
+</section>
 
 <!-- Portfolio -->
 <section id="portfolioSection">  
@@ -85,39 +132,67 @@
   <div class="row" id="portfolioHeader">
     <div class="col s12 m12">
       <h1>Portfolio</h1>
-      <p id="instruction">Click on the "+" to visit the website and/or GitHub page</p>
     </div>
   </div>
 </div>
 
-<div class="container-fluid" id="cardRow"> 
-  <div class="row">
-    <div class="col s11 m4">
-      <div class="card" id="workCard">
-        <div class="card-image">
-          <img src="/images/anchorwd-image.png">
-          <a class="btn-floating halfway-fab waves-effect waves-light grey darken-4" href="http://www.anchorwebdesignservices.com/"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-            <span class="card-title"><strong>Anchor Web Design Services</strong></span>
-          <p>Anchor Web Design was created to help create and transform websites for various clients.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col s11 m4" id="cardRow">
-      <div class="card" id="workCard">
-        <div class="card-image">
-          <img src="/images/train.jpeg">
-          <a class="btn-floating halfway-fab waves-effect waves-light grey darken-4" href="https://github.com/aamir-malik22188/Train-Schedule"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <span class="card-title"><strong>Train Schedule</strong></span>
-          <p>The user in this project is able to add scheduled times for a train. The project utilizes Momentjs and Firebase.</p>
-        </div>
-      </div>
-    </div>
-  </div> 
+<div class="container-fluid">
+  <div class="background-color"></div>
 </div>
+
+<div class='container-fluid'>
+  <div class="content">
+    <button id="previous" class="btn">
+      <i class="bx bxs-chevron-left"></i>
+    </button>
+
+  <div class="con-cards">
+    <div class="card" id="card">
+      <h2> Title</h2>
+      <i class='bx bx-heart'></i>
+        <div class="con-img">
+          <img src="" alt="img">
+          <img class='blur' src="" alt="secondimage">
+        </div>
+        <div class='con-text'>
+          <h2>Second Title</h2>
+          <p>Adding additional text</p>
+        </div>
+    </div>
+    <div class="card" id="card">
+      <h2> Title 2</h2>
+      <i class='bx bx-heart'></i>
+        <div class="con-img">
+          <img src="" alt="img">
+          <img class='blur' src="" alt="secondimage">
+        </div>
+        <div class='con-text'>
+          <h2>Second Title 2</h2>
+          <p>Adding additional text 2</p>
+        </div>
+    </div>
+  </div>
+  <div class="card" id="card">
+      <h2> Title 3</h2>
+      <i class='bx bx-heart'></i>
+        <div class="con-img">
+          <img src="" alt="img">
+          <img class='blur' src="" alt="secondimage">
+        </div>
+        <div class='con-text'>
+          <h2>Second Title 3</h2>
+          <p>Adding additional text 3</p>
+        </div>
+    </div>
+  </div>
+
+  <button id="next" class="btn">
+    <i class="bx bxs-chevron-right"></i>
+  </button>
+</div>
+</div>
+
+
 </section>
 
 
@@ -136,12 +211,10 @@
   <div class="row">
       <div class="col s12 m6" id="contactCard">
           <p>E-Mail Address: Aamir22188@gmail.com</p>
-          <br>
-          <p>Phone Number: (469) 665-9428</p>
-      </div>
-      <div class="col s12 m6" id="watch">
-          <!-- <p>**Time is current time**</p> -->
-          <img src="/images/Portfolio-watch.png" alt="portfolio watch" id="portfolio-watch">
+          <p>LinkedIn: </p>
+          <p>GitHub: </p>
+          <p>Twitter: @TheRealAamir</p>
+
       </div>
     </div>
 </div>
@@ -149,27 +222,28 @@
 </section>
 
 <!-- Footer -->
-  <div class="container-fluid" id="footer">
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m12">
-            <h5 class="white-text">Aamir Malik's Portfolio</h5>
-            <p class="grey-text text-lighten-4">Images presented on this website were designed and created by Aamir Malik for Portfolio purposes</p>
-          </div>
-        </div>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Aamir Malik's Portfolio</h5>
+        <p class="grey-text text-lighten-4">Content on this page was strictly created for this Portfolio.</p>
       </div>
-    </footer>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Checkout me out on Social Media Platforms</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">LinkdIn</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
+  <div class="footer-copyright">
+  </div>
+</footer>
 
 
 </main>
 </body>
 </html>
-
-<!-- <p>I am a Full Stack Developer who has experience in optimizing current business processes
-  that effectively creates efficiencies for the business and the users.
-  I am firm believer of writing clean code and delivering a product to the end user before deadlines.
-  Also, I have 5+ years of experience in a Leadership role and in that role, I was able to manage a team of 30+ teammates and provide guidance to a Pathology Lab of 150+ teammates. 
-  With these attributes, I hope to become an asset to my next team.
-</p> -->
