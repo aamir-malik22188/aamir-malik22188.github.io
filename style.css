@@ -73,30 +73,31 @@ nav{
 }
 
 /* Landing Page */
-#landing{
-    /* height: 100vh; */
-}
 #landingContent{
     margin-top: 200px;
 }
 
 
 #welcomeHeader{
-    text-align: center;
-    transform: translate(0%, 0%);
     font-family: 'Abril Fatface', cursive;
     font-size: 1.5rem;
+    text-align: center;
 }
-ul{ 
+#ulBackground{ 
     white-space:nowrap;
     width: 100%;
+    background-color: #970000;
+    height: 75vh;
+    border-radius: 25px 25px 0px 0px;
 } 
 
 #subSubTitle{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: #970000 !important;
+    color: rgb(194,194,194) !important;
     font-size: 2rem;
     line-height: 5rem;
+    display: flex;
+    justify-content: center;
 }
 
 /* About Me */
@@ -105,10 +106,10 @@ ul{
     overflow: hidden;       
 }
 
-#aboutMe {
+#aboutMe{
     padding: 0px;
     position: relative;
-     z-index: 2;
+    z-index: 2;
 }
 
 #aboutMe img {
@@ -124,31 +125,39 @@ ul{
     -o-background-size: cover;
 }
 
-p{
-    font-size: 1.2rem;
+#aboutBio{
+    text-align: center;
 }
 
+#aboutBio p{
+    text-align: left;
+    font-size: 1rem;
+    padding: 10px;
+
+}
 
 #attributes{
     display: flex;
     justify-self: center;
+    padding: 20px;
 }
 
 /* Portfolio */
 #portfolioHeader{
+    text-align: center;
     font-family: 'Abril Fatface', cursive;
 }
 
-.over-lay{
+/* .over-lay{
     color: red;
     position: relative;
-}
+} */
 
 #card{
    width: 300px;
    min-width: 300px;
    height: auto;
-   background: #fff;
+   background: rgb(194,194,194,0.5);
    border-radius: 30px;
    position: relative;
    z-index: 10;
@@ -170,17 +179,18 @@ p{
 
 }
 
-.card:hover img.projectImage{
+.card:hover img.con-image{
     opacity: .45;
     transform: translate (-10px, 26px) scale (.85);
 }
 
-#card h2{
-    position: absolute;
+#card h5{
+    position: relative;
     font-family: 'oswald', sans-serif;
     left: 0px;
     top: 0px;
     padding: 15px;
+    text-align: center;
 }
 
 #card i.bx {
@@ -192,14 +202,14 @@ p{
 }
 
 #card con-text{
-    padding: 20px;
+    padding: 100px;
 }
 
 p{
     font-family: 'Montessrat', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     opacity: 0.6;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 #card con-img{
@@ -210,11 +220,20 @@ p{
     align-items: center;
     justify-content: center;
     transition: all .35s ease-out;
+}
+
+.con-text p{
+    padding-left: 20px;
+    margin-top: 0px;
+    text-align: left;
 
 }
 
 #card img{
-    height: 300px;
+    height: 220px;
+    margin: 5px;
+    justify-content: center;
+    
 }
 
 .card img.blur{
@@ -232,8 +251,8 @@ p{
     justify-content: flex-start;
     width: 100%;
     overflow: auto;
-    padding-top: 100px;
-    padding-left: 60px;
+    padding-top: 50px;
+    padding-left: 50px;
     padding-right: 50px;
     scroll-behavior: smooth;
 }
@@ -254,13 +273,13 @@ p{
     min-width: 60px;
     height: 60px;
     border-radius: 20px;
-    background: #fff;
-    border: 0px;
+    background: transparent !important;
+    border: none;
     outline: none;
     cursor: pointer;
     z-index: 200;
     margin: 10px;
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.08);
+    /* box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0); */
     transition: all .25s ease;
 }
 
@@ -270,16 +289,17 @@ p{
 }
 
 .btn i {
-    font-size: 1.6rem;
+    color: black;
+    font-size: 1rem;
 }
 
 .content{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(242, 243, 248);
+    /* background: rgb(242, 243, 248); */
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
 
 }
@@ -291,8 +311,8 @@ p{
     position: absolute;
     width: 150px;
     z-index: 100;
-    background: linear-gradient(90deg, rgb(242, 243, 248) 0%,
-    rgba(242, 243, 248, 0) 100%);
+    /* background: linear-gradient(90deg, rgb(242, 243, 248) 0%,
+    rgba(242, 243, 248, 0) 100%); */
     pointer-events: none;
 }
 
@@ -304,8 +324,8 @@ p{
     position: absolute;
     width: 150px;
     z-index: 100;
-    background: linear-gradient(90deg, rgba(242, 243, 248, 0) 0%, 
-    rgba(242, 243, 248, 1) 100%);
+    /* background: linear-gradient(90deg, rgba(242, 243, 248, 0) 0%, 
+    rgba(242, 243, 248, 1) 100%); */
 }
 
 
@@ -324,31 +344,15 @@ p{
     padding-bottom: 100%;
 }
 
-#workCard{
-    margin-left: 5%;
-    background-color: white;
-    color: black;
-    border: solid black;
-    font-size: 1rem;
-    height: 50%;
-}
 
-.card-title{
-    text-decoration: underline rgb(151, 0, 0);
-}
-
-.card-image{
-    border: solid black;
-}
 
 
 /* Contact Me */
-
-
-/* Footer */
-.page-footer{
-    background-color: black !important;
+#contactTitle{
     text-align: center;
 }
+
+
+
 
 

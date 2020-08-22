@@ -62,8 +62,12 @@
 <section  id="landing"> 
   <div class="container-fluid">
     <div class="row" id="landingContent">
-      <div class="col s12 m12 l5" id="welcomeHeader">
-        <h2>Aamir Malik's Portfolio</h2>
+      <div class="col s12 m12 l12" id="welcomeHeader">
+        <h3>Aamir Malik's Portfolio</h3>
+      </div>
+    </div>
+    <div class="row" id="ulBackground">
+      <div class="s12 m12 l12">
         <ul id="subTitle">
           <li><a id="subSubTitle" href="#aboutMe">About Me</a></li>
           <li><a id="subSubTitle" href="#portfolioSection">Portfolio</a></li>
@@ -71,7 +75,6 @@
         </ul>
       </div>
     </div>
-  </div>
   </div>
 </section>
 
@@ -81,10 +84,14 @@
     <img src="/images/Portfolio.png">
   </div>
 
-  <div class="container-fluid" id="portfolio">
+  <div class="container-fluid" id="aboutBio">
     <div class="row">
       <div class="col s12 m12 l12">
         <h1 id="portfolioHeader">About Me</h1>
+      </div>
+    </div>
+    <div class ='row'>
+      <div class="col s12 m12 l12">
         <p>I am a Full Stack Developer who has experience in optimizing current business processes
           that effectively creates efficiencies for the business and the users.
           I am firm believer of writing clean code and delivering a product to the end user before deadlines.
@@ -93,11 +100,11 @@
         </p>
       </div>
     </div>
-  </div>  
+  </div>
 
 <div class="container-fluid">
   <div class='row'>
-    <div class="col s6 m6" id="attributes">
+    <div class="col s6 m12 l6" id="attributes">
       <ul>
         <li>Developer Technologies<li>
         <li>HTML5</li>
@@ -128,68 +135,70 @@
 <!-- Portfolio -->
 <section id="portfolioSection">  
 
-<div class="container-fluid" id="portfolio">
-  <div class="row" id="portfolioHeader">
-    <div class="col s12 m12">
+<div class='container-fluid'>
+  <div class="row">
+    <div class="col s12 m12 l12" id="portfolioHeader">
       <h1>Portfolio</h1>
     </div>
   </div>
-</div>
-
-<div class="container-fluid">
-  <div class="background-color"></div>
-</div>
-
-<div class='container-fluid'>
-  <div class="content">
-    <button id="previous" class="btn">
-      <i class="bx bxs-chevron-left"></i>
-    </button>
-
-  <div class="con-cards">
-    <div class="card" id="card">
-      <h2> Title</h2>
-      <i class='bx bx-heart'></i>
-        <div class="con-img">
-          <img src="" alt="img">
-          <img class='blur' src="" alt="secondimage">
-        </div>
-        <div class='con-text'>
-          <h2>Second Title</h2>
-          <p>Adding additional text</p>
-        </div>
-    </div>
-    <div class="card" id="card">
-      <h2> Title 2</h2>
-      <i class='bx bx-heart'></i>
-        <div class="con-img">
-          <img src="" alt="img">
-          <img class='blur' src="" alt="secondimage">
-        </div>
-        <div class='con-text'>
-          <h2>Second Title 2</h2>
-          <p>Adding additional text 2</p>
-        </div>
+  <div class="row">
+    <div class="col s4 m12 l12">
+      <div class="content">
+        <button id="previous" class="btn">
+          <i class="material-icons bx ">chevron_left</i>
+        </button>
+          <div class="con-cards">
+            <div class="card" id="card">
+              <h5> COVID-19 Tracker</h5>
+              <i class='bx bx-heart'></i>
+              <div class="con-img">
+                <img src="./images/joanna-kosinska-129039-unsplash.jpg" alt="img">
+                <img class='blur' src="" alt="secondimage">
+              </div>
+              <div class='con-text'>
+                <p>Adding additional text</p>
+              </div>
+            </div>
+            <div class="card" id="card">
+              <h5>Twitter React App</h5>
+              <i class='bx bx-heart'></i>
+                <div class="con-img">
+                  <img src="./images/joanna-kosinska-129039-unsplash.jpg" alt="img">
+                  <img class='blur' src="" alt="secondimage">
+                </div>
+                <div class='con-text'>
+                  <p>In progress</p>
+                </div>
+            </div>
+            <div class="card" id="card">
+              <h5> Train Scheduler</h5>
+              <i class='bx bx-heart'></i>
+                <div class="con-img">
+                  <img src="./images/joanna-kosinska-129039-unsplash.jpg" alt="img">
+                  <img class='blur' src="" alt="secondimage">
+                </div>
+                <div class='con-text'>
+                  <p>CRUD Application</p>
+                </div>
+            </div>
+            <div class="card" id="card">
+              <h5> See previous projects</h5>
+              <i class='bx bx-heart'></i>
+                <div class="con-img">
+                  <img src="./images/joanna-kosinska-129039-unsplash.jpg" alt="img">
+                  <img class='blur' src="" alt="secondimage">
+                </div>
+                <div class='con-text'>
+                  <p>Add addiional projects</p>
+                </div>
+            </div>
+            <button id="next" class="btn">
+              <i class="material-icons bx ">chevron_right</i>
+            </button>
+          </div>
+      </div>
     </div>
   </div>
-  <div class="card" id="card">
-      <h2> Title 3</h2>
-      <i class='bx bx-heart'></i>
-        <div class="con-img">
-          <img src="" alt="img">
-          <img class='blur' src="" alt="secondimage">
-        </div>
-        <div class='con-text'>
-          <h2>Second Title 3</h2>
-          <p>Adding additional text 3</p>
-        </div>
-    </div>
-  </div>
-
-  <button id="next" class="btn">
-    <i class="bx bxs-chevron-right"></i>
-  </button>
-</div>
 </div>
 
 
@@ -200,29 +209,40 @@
 <section id=contactSection>
 
 <div class="container-fluid" id="contact">
-  <div class="row" id="contactTitle">
-    <div class="col s12 m12">
-      <h2>Contact Me</h2>
+  <div class="row" >
+    <div class="col s12 m12" id="contactTitle">
+      <h3>Contact Me</h3>
     </div>
   </div> 
 </div>
 
-<div class="container-fluid">   
+<div class="container-fluid"> 
   <div class="row">
-      <div class="col s12 m6" id="contactCard">
-          <p>E-Mail Address: Aamir22188@gmail.com</p>
-          <p>LinkedIn: </p>
-          <p>GitHub: </p>
-          <p>Twitter: @TheRealAamir</p>
-
-      </div>
+    <div class= "col s12 m12 l12" id="contactTitle">
+      <p>E-Mail Address: Aamir22188@gmail.com</p>
     </div>
+  </div>
+  <div class="row">
+    <div class= "col s12 m12 l12" id="contactTitle">
+      <a href="LinkedIn: www.linkedin.com/in/aamir-malik-22188am">Linkedin</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class= "col s12 m12 l12" id="contactTitle">
+      <a href="https://github.com/aamir-malik22188">GitHub</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class= "col s12 m12 l12" id="contactTitle">
+      <a href="twitter.com/TheRealAamir">Twitter</a>
+    </div>
+  </div>         
 </div>
 
 </section>
 
 <!-- Footer -->
-<footer class="page-footer">
+<!-- <footer class="page-footer">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
@@ -241,7 +261,7 @@
   </div>
   <div class="footer-copyright">
   </div>
-</footer>
+</footer> -->
 
 
 </main>

@@ -1,9 +1,3 @@
-// Projects to list
-    // Train Project
-    // Node JS project
-    // Covid Project
-    // XML to Json Converter
-
 const next = document.querySelector("#next");
 const previous = document.querySelector("#previous");
 
