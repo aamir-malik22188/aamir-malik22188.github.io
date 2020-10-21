@@ -35,44 +35,55 @@
 <body>
 
 <!-- Desktop Nav -->
+
+
 <nav id="navbar">
-    <div class="nav-wrapper" >
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons" id="menuIcon">menu</i></a>
+    <div class="nav-wrapper navbar-fixed" >
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
       <ul id="nav-mobile" class="hide-on-med-and-down">
           <li><a id="navTitle" href="#landing">Home</a></li>
           <li><a id="navTitle" href="#aboutMe">About Me</a></li>
-          <li><a id="navTitle" href="#portfolio">Portfolio</a></li>
+          <li><a id="navTitle" href="#portfolioSection">Portfolio</a></li>
           <li><a id="navTitle" href="#contact">Contact Me</a></li>
       </ul>
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
+<ul id="slide-out" class="sidenav" id="mobile-demo">
       <li><a id="mobileTitle" href="#landing">Home</a></li>
       <li><a id="mobileTitle" href="#aboutMe">About Me</a></li>
       <li><a id="mobileTitle" href="#portfolio">Portfolio</a></li>
       <li><a id="mobileTitle" href="#contact">Contact Me</a></li>
-    </ul>
-<main>
+</ul>
 
-<section id="main">
+<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" id="menuButton">menu</i></a>
+
+<main>
 
 
 <!-- Landing Page -->
 <section  id="landing"> 
-  <div class="container-fluid">
-    <div class="row" id="landingContent">
-      <div class="col s12 m12 l12" id="welcomeHeader">
-        <h3>Aamir Malik's Portfolio</h3>
+  <div class="container-fluid" id="landingContent">
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <div class="offset1"></div>
+        <div class="offset2"></div>
+        <h2  id="welcomeHeader">Aamir</h2>
       </div>
     </div>
-    <div class="row" id="ulBackground">
-      <div class="s12 m12 l12">
-        <ul id="subTitle">
-          <li><a id="subSubTitle" href="#aboutMe">About Me</a></li>
-          <li><a id="subSubTitle" href="#portfolioSection">Portfolio</a></li>
-          <li><a id="subSubTitle" href="#contact">Contact Me</a></li>
-        </ul>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h2  id="welcomeHeader">Malik's</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12">
+        <h2  id="welcomeHeader">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m12 l12" id="downArrow">
+        <i class="large material-icons">arrow_downward</i>
       </div>
     </div>
   </div>
@@ -80,127 +91,131 @@
 
 <!-- About Me Section -->
 <section id="aboutMe">
-  <div class="container-fluid">
-    <img src="/images/Portfolio.png">
-  </div>
 
   <div class="container-fluid" id="aboutBio">
     <div class="row">
       <div class="col s12 m12 l12">
-        <h1 id="portfolioHeader">About Me</h1>
+        <h1 id="sectionHeader">About</h1>
+        <hr>
       </div>
     </div>
+      <div class="row">
+        <div class="col s6 m3 l3" >
+          <div class="card-panel">
+            <img id="adjectives" src="./images/knowledgeable.png">
+            <h6>Knowledgeable</h6>
+          </div>
+          
+        </div>
+        <div class="col s6 m3 l3">
+          <div class="card-panel">
+            <img id="adjectives" src="./images/adaptable.png">
+            <h6>Adaptable</h6>
+          </div>
+          
+        </div>
+        <div class="col s6 m3 l3">
+          <div class="card-panel">
+            <img id="adjectives" src="./images/ambitious.png">
+            <h6>Ambitious</h6>
+          </div>
+          
+        </div>
+        <div class="col s6 m3 l3">
+          <div class="card-panel">
+            <img id="adjectives" src="./images/timely.png">
+            <h6>Timely</h6>
+          </div>
+          
+        </div>
+      </div>
     <div class ='row'>
-      <div class="col s12 m12 l12">
-        <p>I am a Full Stack Developer who has experience in optimizing current business processes
-          that effectively creates efficiencies for the business and the users.
-          I am firm believer of writing clean code and delivering a product to the end user before deadlines.
-          Also, I have 5+ years of experience in a Leadership role and in that role, I was able to manage a team of 30+ teammates and provide guidance to a Pathology Lab of 150+ teammates. 
-          With these attributes, I hope to become an asset to my next team.
+      <div class="col s12 m6 l6">
+        <h4>Who am I?</h4>
+        <p>During the day, I am a Microsoft Dyanamics System Administrator at Inform Diagnostics.
+          By night, I am a passionate Full Stack Developer and I enjoy creating projects with various technologies.
         </p>
       </div>
+        <div class="col s6 m3 l3">
+        <ul>
+          <li id="skillHeader">Front/Back End Skills</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Bootstrap</li>
+          <li>MaterializeUI</li>
+          <li>JavaScript</li>
+          <li>ReactJS</li>
+          <li>NodeJs</li>
+          <li>mongoDB</li>
+          <li>mySQL</li>
+        </ul>
+      </div>
+      <div class="col s6 m3 l3">
+        <ul>
+          <li id="skillHeader">Applications</li>
+          <li>Visual Studio Code</li>
+          <li>Azure DevOps</li>
+          <li>Postman</li>
+          <li>GitHub</li>
+          <li>D365 F&O</li>
+          <li>D365 CRM</li>
+          <li>WinSurge LIS</li>
+          <li>Novopath LIS</li>
+          <li>Vital Axis LIS</li>
+        </ul>
+      </div>
+      
     </div>
   </div>
 
-<div class="container-fluid">
-  <div class='row'>
-    <div class="col s6 m12 l6" id="attributes">
-      <ul>
-        <li>Developer Technologies<li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Bootstrap</li>
-        <li>MaterializeUI</li>
-        <li>JavaScript</li>
-        <li>ReactJS</li>
-        <li>NodeJs</li>
-      </ul>
-    </div>
-    <div class="col s6 m6 l6" id="attributes">
-      <ul>
-        <li>Other Technologies</li>
-        <li>mongoDB</li>
-        <li><mySQL</li>
-        <li>Azure DevOps</li>
-        <li>Azure Service Bus</li>
-        <li>Postman</li>
-        <li>Github</li>
-      </ul>
-    </div>
-  </div>
-</div>
 
 </section>
 
 <!-- Portfolio -->
 <section id="portfolioSection">  
 
-<div class='container-fluid'>
+<div class="container-fluid">
   <div class="row">
-    <div class="col s12 m12 l12" id="portfolioHeader">
+    <div class="col s12 m12 l12" id="sectionHeader">
       <h1>Portfolio</h1>
+      <hr>
     </div>
-  </div>
-  <div class="row">
-    <div class="col s4 m12 l12">
-      <div class="content">
-        <button id="previous" class="btn">
-          <i class="material-icons bx ">chevron_left</i>
-        </button>
-          <div class="con-cards">
-            <div class="card" id="card">
-              <h5> COVID-19 Tracker</h5>
-              <i class='bx bx-heart'></i>
-              <div class="con-img">
-                <img src="./images/joanna-kosinska-129039-unsplash.jpg" alt="img">
-                <img class='blur' src="" alt="secondimage">
-              </div>
-              <div class='con-text'>
-                <p>Adding additional text</p>
-              </div>
+   </div>
+   <div class="row">
+    <div class="col s12 m5 l4">
+      <div class="card-panel" id="portfolioCard">
+        <div class="row" id="projectName">
+          <span class="white-text">Train Scheduler</span>
+        </div>
+        <div class="row" id="projectModal">
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Learn More</a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+                  <img src="images/train.jpeg">
+                  <p>This project was created to allow users an opportunity
+                    to Create, Read, Update, and Delete their input. 
+                  </p>
+                  <a href="https://github.com/aamir-malik22188/Train-Schedule" class="waves-effect waves-red btn-flat" id="repoBtn">GitHub Repo</a>
             </div>
-            <div class="card" id="card">
-              <h5>Twitter React App</h5>
-              <i class='bx bx-heart'></i>
-                <div class="con-img">
-                  <img src="./images/joanna-kosinska-129039-unsplash.jpg" alt="img">
-                  <img class='blur' src="" alt="secondimage">
-                </div>
-                <div class='con-text'>
-                  <p>In progress</p>
-                </div>
+            
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-red btn-flat">X</a>
             </div>
-            <div class="card" id="card">
-              <h5> Train Scheduler</h5>
-              <i class='bx bx-heart'></i>
-                <div class="con-img">
-                  <img src="./images/joanna-kosinska-129039-unsplash.jpg" alt="img">
-                  <img class='blur' src="" alt="secondimage">
-                </div>
-                <div class='con-text'>
-                  <p>CRUD Application</p>
-                </div>
-            </div>
-            <div class="card" id="card">
-              <h5> See previous projects</h5>
-              <i class='bx bx-heart'></i>
-                <div class="con-img">
-                  <img src="./images/joanna-kosinska-129039-unsplash.jpg" alt="img">
-                  <img class='blur' src="" alt="secondimage">
-                </div>
-                <div class='con-text'>
-                  <p>Add addiional projects</p>
-                </div>
-            </div>
-            <button id="next" class="btn">
-              <i class="material-icons bx ">chevron_right</i>
-            </button>
           </div>
+        </div>
       </div>
     </div>
+
+
+
+
+
+  </div>
+  
   </div>
 </div>
-
 
 </section>
 
@@ -209,60 +224,40 @@
 <section id=contactSection>
 
 <div class="container-fluid" id="contact">
-  <div class="row" >
-    <div class="col s12 m12" id="contactTitle">
-      <h3>Contact Me</h3>
-    </div>
+ <div class="row">
+  <div class="col s12 m12 l12"  id="contactTitle">
+    <h3>Lets Work Together!</h3>
+    <hr>
+  </div>
   </div> 
 </div>
 
-<div class="container-fluid"> 
-  <div class="row">
-    <div class= "col s12 m12 l12" id="contactTitle">
-      <p>E-Mail Address: Aamir22188@gmail.com</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class= "col s12 m12 l12" id="contactTitle">
-      <a href="LinkedIn: www.linkedin.com/in/aamir-malik-22188am">Linkedin</a>
-    </div>
-  </div>
-  <div class="row">
-    <div class= "col s12 m12 l12" id="contactTitle">
-      <a href="https://github.com/aamir-malik22188">GitHub</a>
-    </div>
-  </div>
-  <div class="row">
-    <div class= "col s12 m12 l12" id="contactTitle">
-      <a href="twitter.com/TheRealAamir">Twitter</a>
-    </div>
-  </div>         
-</div>
-
-</section>
-
-<!-- Footer -->
-<!-- <footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Aamir Malik's Portfolio</h5>
-        <p class="grey-text text-lighten-4">Content on this page was strictly created for this Portfolio.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Checkout me out on Social Media Platforms</h5>
+<div class="container-fluid">
+  <div class="row" >
+    <div class="col s12 m12 l5" id="cardAlign">
+      <div class="card-panel" id="contactCard">
+        <h5>Contact Information</h5>
+        <br>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">LinkdIn</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+          <li>City:</li>
+          <li id="li1">Dallas</li>
+          <br>
+          <li>State:</li>
+          <li id="li1">Texas</li>
+          <br>
+          <li>Email:</li>
+          <li id="li1">Aamir22188@gmail.com</li>
+          <br>
+          <li>Social:</li>
+          <li id="li1">linkedin</li>
+          <li id="li1">Github</li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="footer-copyright">
-  </div>
-</footer> -->
+</div>
 
+</section>
 
 </main>
 </body>
