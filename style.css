@@ -206,18 +206,7 @@ section{
     position: absolute;
     bottom: 0;
     padding: 10px;
-    animation-name: downArrowAnimate;
-    animation-duration: 12s;  
 }
-
-    @keyframes downArrowAnimate{
-        0%{
-            opacity: -1;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
 
 /* About Me */
 #aboutMe {
@@ -304,7 +293,7 @@ h4{
    
 }
 
-#portfolioCard{
+#portfolioCard1{
     background-image: url(./images/train.jpeg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -313,6 +302,19 @@ h4{
     display: flex;
     flex-direction: column;
     box-shadow: 0px 2px 10px black;
+    width: 95%;
+}
+
+#portfolioCard2{
+    background-image: url(./images/coronavirus-25.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 10px black;
+    width: 95%;
 }
 
 #projectModal a{
@@ -353,11 +355,7 @@ h4{
 
 /* Contact Me */
 #contactSection{
-    background-image: url(./images/home-map.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: white;
 }
 
 
@@ -369,6 +367,8 @@ h4{
 
 
 #contactCard{
+    display: flex;
+    justify-content: center;
     border: black solid 5px;
     box-shadow: 0px 2px 10px black;
     background: linear-gradient(170deg, rgba(151,0,0,1) 50%, rgba(0,0,0,1) 50%) !important;
@@ -376,14 +376,18 @@ h4{
     color: white;
     margin-top: 25px;
     text-align: left;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+}
+
+.card-panel h5{
+    padding-right: 10%;
 }
 
 
-#li1{
+#li1, a{
     font-size: 1.1rem;
     font-weight: bold;
+
 }
 
 
@@ -421,9 +425,11 @@ hr{
         margin-top: 300px;
     }
     .offset1{
+        height: 40%;
         width: 40%;
     }
     .offset2{
+        height: 40%;
         width: 30%;
     }
 
@@ -448,7 +454,7 @@ hr{
     }
   }
 
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1023px) {
     #navTitle{
         display: block;
     }
@@ -477,12 +483,14 @@ hr{
         background: linear-gradient(148deg, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%) !important;
     }
 
-    .modal-content image{
-        max-width: 10%;
+    .modal-content img{
+        display: flex;
+        justify-content: center;
+        max-width: 75%;
     }
 
     #contactCard{
-        width: 60%;
+        width: 50%;
     }
     #card-contact{
         display: flex;
@@ -493,9 +501,13 @@ hr{
         margin-top: 300px;
     }
     .offset1{
+        top: 15%;
+        height: 40%;
         width: 40%;
     }
     .offset2{
+        top: 20%;
+        height: 40%;
         width: 30%;
     }
 
@@ -514,3 +526,16 @@ hr{
     }
    
   }
+
+@media screen and (min-width: 1280px) {
+    .offset1{
+        top: 25%;
+        height: 45%;
+        width: 40%;
+    }
+    .offset2{
+        top: 30%;
+        height: 45%;
+        width: 30%;
+    }
+}
