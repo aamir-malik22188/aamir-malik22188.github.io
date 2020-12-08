@@ -63,21 +63,18 @@
 
 <!-- Landing Page -->
 <section  id="landing"> 
-  <div class="container-fluid" id="landingContent">
-    <div class="row">
+  <div class="container-fluid" >
+    <div class="row" id="landingContent">
       <div class="col s12 m12 l12">
         <div class="offset1"></div>
         <div class="offset2"></div>
+ 
+      </div>
+    </div>
+    <div class="row" id="landingContent">
+      <div class="col s12 m12 l12">
         <h2  id="welcomeHeader">Aamir</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m12 l12">
         <h2  id="welcomeHeader">Malik's</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s12 m12 l12">
         <h2  id="welcomeHeader">Portfolio</h2>
       </div>
     </div>
@@ -99,7 +96,9 @@
         <hr>
       </div>
     </div>
-      <div class="row">
+
+  <div class="container-fluid" id="aboutBio">
+    <div class="row">
         <div class="col s6 m3 l3" >
           <div class="card-panel">
             <img id="adjectives" src="./images/Knowledegeable.png">
@@ -192,6 +191,7 @@
 
           <!-- Modal Structure -->
           <div id="modal1" class="modal">
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat right">X</a>
             <div class="modal-content">
                   <img src="images/train.jpeg">
                   <p>This project was created to allow users an opportunity
@@ -199,10 +199,8 @@
                   </p>
                   <a href="https://github.com/aamir-malik22188/Train-Schedule" class="waves-effect waves-red btn-flat" id="repoBtn">GitHub Repo</a>
             </div>
-            
-            <div class="modal-footer">
-              <a href="#!" class="modal-close waves-effect waves-red btn-flat">X</a>
-            </div>
+            <!-- <div class="modal-footer">
+            </div> -->
           </div>
         </div>
       </div>
@@ -210,22 +208,48 @@
     <div class="col s12 m5 l4">
       <div class="card-panel" id="portfolioCard2">
         <div class="row" id="projectName">
-          <span class="white-text">COVID-19 Data</span>
+          <span class="white-text">Giphy API Project</span>
         </div>
         <div class="row" id="projectModal">
           <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Learn More</a>
 
           <!-- Modal Structure -->
           <div id="modal2" class="modal">
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat right">X</a>
+            <div class="modal-content">
+                  <img src="/images/Giphs app.JPG">
+                  <p>This project was created with HTML/CSS(Bootstrap)/jQuery. The project utilizes API calls to GIPHY API.</p>
+                  <p>NOTE: User will have to supply their own API Key.</p>
+
+                  <a href="https://github.com/aamir-malik22188/giphy-api-project" class="waves-effect waves-red btn-flat" id="repoBtn">GitHub Repo</a>
+            </div>
+            
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m5 l4">
+      <div class="card-panel" id="portfolioCard3">
+        <div class="row" id="projectName">
+          <span class="white-text">COVID-19 Data</span>
+        </div>
+        <div class="row" id="projectModal">
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Learn More</a>
+
+          <!-- Modal Structure -->
+          <div id="modal3" class="modal">
+            <a href="#!" class="modal-close waves-effect waves-red btn-flat right">X</a>
             <div class="modal-content">
                   <img src="/images/covid-tracker-image.png">
                   <p>This project was created with ReactJS Framework and utilized API calls to get daily COVID-19 data.
                   </p>
-                  <a href="https://github.com/aamir-malik22188/Train-Schedule" class="waves-effect waves-red btn-flat" id="repoBtn">GitHub Repo</a>
+                  <a href="https://github.com/aamir-malik22188/covid-19-tracker" class="waves-effect waves-red btn-flat" id="repoBtn">GitHub Repo</a>
             </div>
             
             <div class="modal-footer">
-              <a href="#!" class="modal-close waves-effect waves-red btn-flat">X</a>
+              
             </div>
           </div>
         </div>
@@ -283,6 +307,13 @@
 </div>
 
 </section>
+
+<div class="container-fluid">
+  <footer>
+    <p>This site is used to showcase development projects</p>
+  </footer>
+</div>
+
 
 </main>
 </body>

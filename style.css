@@ -4,7 +4,7 @@ html{
 }
 
 body{
-    background-color: rgb(255,255,255);
+    background-color: #F8F8F8;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,39 +18,33 @@ main {
   }
     
 
-section{
-    min-height: 100vh;
-    
-}
-
-
 #navbar{
-    background-color: black !important;
-    height: 0px !important;
+    background-color: black;
+    position: fixed;
     width: 100%;
     display: block;
-    transition: top 2s;
-    top: 1%;
-    display: none; 
     justify-content: center;
+    z-index: 100;
+    box-shadow: 0px 0px 10px black;
 }
 
 .nav-wrapper{
-    background-color: black !important;
     float: right;
+    position: fixed;
 }
 
 
 
 #navTitle{
-    font-size: 2rem;
-    color: rgb(151, 0, 0);
-    margin: 25px;
+    font-size: 1rem;
+    color: white;
+    margin: 2px;
 }
 
 #navTitle:hover{
-    text-decoration: underline black;
+    text-decoration:  underline #970000;
     background-color: inherit;
+    
 }
 
 #mobile-demo{
@@ -67,49 +61,40 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
 
 }
 
 #menuButton{
     color: #970000;
-    margin-left: 5%;
-    margin-top: 5%;
     font-size: 2.5rem;
-    display: none;
+    z-index: 100;
 }
 
 .sidenav-trigger{
-    width: 75%;
+    color: white;
 }
 
 
 /* Landing Page */
+#landing, #portfolioSection, #contactSection{
+    height: 100vh;
+}
+
 #landingContent{
-    margin-top: 250px;
+    height: 200px;
+    text-align: center;
 }
 
 #welcomeHeader{
     font-family: 'Abril Fatface', cursive;
     color: rgb(255, 255, 255);
     mix-blend-mode: difference;
-    height: 0em;
+    height: 1em;
     display: flex;
     align-items: center;
-    justify-content: center;
-    animation-name: welcomeHeaderFade;
-    animation-duration: 5s;  
+    justify-content: center; 
     z-index: 10;
 }
-
-    /* @keyframes welcomeHeaderFade{
-        0%{
-            opacity: 0.5;
-        }
-        100%{
-            opacity: 1;
-        }
-    } */
 
 #welcomeHeader h2 {
     margin: 0 }
@@ -212,7 +197,7 @@ section{
 #aboutMe {
     position: absolute;
     overflow: hidden; 
-    background: linear-gradient(-130deg, rgba(151,0,0,1) 50%, rgb(255, 255, 255) 50%) !important;
+
     border: none !important;
     color: white;
 }
@@ -228,7 +213,7 @@ section{
     border-radius: 30px !important;
     background-color: rgba(0,0,0,1) !important;
     box-shadow: 0px 2px 10px black !important;
-    margin-top: 10% !important;
+    margin-top: 1% !important;
     
 }
 
@@ -276,13 +261,11 @@ h4{
 }
 
 /* Portfolio */
-#portfolioSection{
-    background: linear-gradient(130deg, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%) !important;
-}
 #sectionHeader{
     text-align: center;
     font-family: 'Abril Fatface', cursive;
     margin-bottom: 25px;
+    color:rgba(151,0,0,1);
 }
 
 #projectName, #projectModal{
@@ -306,6 +289,17 @@ h4{
 }
 
 #portfolioCard2{
+    background-image: url(./images/giphy-3.gif);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 10px black;
+    width: 95%;
+}
+#portfolioCard3{
     background-image: url(./images/coronavirus-25.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -315,6 +309,19 @@ h4{
     flex-direction: column;
     box-shadow: 0px 2px 10px black;
     width: 95%;
+}
+
+.modal-content{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    margin: 5%;
+}
+
+.modal-content img{
+    max-width: 280px;
+    max-height: 180px;
 }
 
 #projectModal a{
@@ -334,9 +341,6 @@ h4{
     border-color:  white;
 }
 
-.modal-content img{
-    max-width: 100%;
-}
 
 #repoBtn{
     background-color: black !important;
@@ -354,12 +358,6 @@ h4{
 
 
 /* Contact Me */
-#contactSection{
-    background-color: white;
-}
-
-
-
 #contactTitle{
     text-align: center;
     font-family: 'Abril Fatface', cursive;
@@ -374,7 +372,6 @@ h4{
     background: linear-gradient(170deg, rgba(151,0,0,1) 50%, rgba(0,0,0,1) 50%) !important;
     border-radius: 5px;
     color: white;
-    margin-top: 25px;
     text-align: left;
     width: 100%;
 }
@@ -404,33 +401,40 @@ hr{
     color: rgb(55, 51, 51) !important;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    height: 50px;
+    position: sticky;
+    text-align: center;
+}
 
 @media screen and (min-width: 768px) {
-    #navTitle{
-        display: block;
+    #landingContent{
+        height: 250px;
+    }
+    
+    #welcomeHeader{
+        height: 1.2em;
     }
 
-    #menuButton{
-        display: none;
-    }
     #contactCard{
         width: 60%;
+        
     }
+
     #card-contact{
         display: flex;
         justify-content: center;
         align-content: center;
     }
-    #landingContent{
-        margin-top: 300px;
-    }
     .offset1{
-        height: 40%;
-        width: 40%;
+        height: 50%;
+        width: 50%;
     }
     .offset2{
-        height: 40%;
-        width: 30%;
+        height: 50%;
+        width: 40%;
     }
 
     #aboutBio{
@@ -452,53 +456,48 @@ hr{
     #contactCard{
         width: 50%;
     }
-  }
+    
+    .modal-content img{
+        max-width: 320px;
+        max-height: 200px;
+    }
 
 @media screen and (min-width: 1023px) {
+    #landingContent{
+        height: 250px;
+    }
+    
+    #welcomeHeader{
+        height: 1em;
+    }
     #navTitle{
         display: block;
     }
 
-    #menuButton{
-        display: none;
-    }
 
-    #welcomeHeader{
-        font-family: 'Abril Fatface', cursive;
-        color: rgb(255, 255, 255);
-        mix-blend-mode: difference;
-        height: 0em;
-        display: flex;
-        align-items: center;
+    .modal-content{
+        display: block;
         justify-content: center;
-        z-index: 10;
-    }
-
-    #aboutMe {
-        background: linear-gradient(-148deg, rgba(151,0,0,1) 50%, rgb(255, 255, 255) 50%) !important;
-       
-    }
-
-    #portfolioSection{
-        background: linear-gradient(148deg, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%) !important;
+        text-align: center;
+        max-width: 100%;
+        margin: 5%;
     }
 
     .modal-content img{
-        display: flex;
-        justify-content: center;
-        max-width: 75%;
+        max-width: 325px;
+        max-height: 250px;
     }
+
 
     #contactCard{
         width: 50%;
+        
     }
+
     #card-contact{
         display: flex;
         justify-content: center;
         align-content: center;
-    }
-    #landingContent{
-        margin-top: 300px;
     }
     .offset1{
         top: 15%;
@@ -528,6 +527,13 @@ hr{
   }
 
 @media screen and (min-width: 1280px) {
+    #landingContent{
+        height: 250px;
+    }
+    
+    #welcomeHeader{
+        height: 1em;
+    }
     .offset1{
         top: 25%;
         height: 45%;
