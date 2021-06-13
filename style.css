@@ -1,50 +1,55 @@
-html{
-    scroll-behavior: smooth;
-    overflow: auto;
-}
+/*
+Color Palette:
+    light grey: #eeeeee
+    dark grey: #393e46
+    black: #222831
+    green: #7bc74d
+ */  
 
-body{
-    background-color: #F8F8F8;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
+html, main, body {
     flex: 1 0 auto;
+    scroll-behavior: smooth;
   }
-    
+
+  
+
+section {
+    display: block;
+    overflow: visible;
+    /* margin: 1.5% 0 1.5% 0; */
+}
+
+.row{
+    border-spacing:0;
+    border-collapse:collapse;
+}
+
+h2{
+    color: #7bc74d
+}
 
 #navbar{
-    background-color: black;
+    background-color: #393e46 !important;
     position: fixed;
-    width: 100%;
+    box-shadow: none;
+    z-index: 2;
     display: block;
-    justify-content: center;
-    z-index: 100;
-    box-shadow: 0px 0px 10px black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
 }
-
-.nav-wrapper{
-    float: right;
-    position: fixed;
-}
-
-
 
 #navTitle{
-    font-size: 1rem;
-    color: white;
-    margin: 2px;
+    font-size: 1.5rem;
+    color: #eeeeee;
+    
 }
 
 #navTitle:hover{
-    text-decoration:  underline #970000;
-    background-color: inherit;
-    
+    background-color: #393e46;
+    color: #7bc74d;
+    border-radius: 5px;
 }
 
 #mobile-demo{
@@ -55,187 +60,251 @@ main {
 }
 
 #mobileTitle{
-    color: #970000;
-    height: 10rem;
-    font-size: 1.5rem;
+    color: #eeeeee;
+    height: 15rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
 }
 
 #menuButton{
-    color: #970000;
+    color: #eeeeee;
     font-size: 2.5rem;
     z-index: 100;
+    margin-right: 25px;
 }
 
-.sidenav-trigger{
-    color: white;
+.navbar-fixed img{
+    max-width: 30px;
 }
 
 
-/* Landing Page */
-#landing, #portfolioSection, #contactSection{
+.sidenav {
+    background-color: #393e46 !important;
+
+}
+
+
+
+
+/* ------------- Landing Page ----------*/
+#one {
     height: 100vh;
-}
-
-#landingContent{
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     text-align: center;
 }
 
-#welcomeHeader{
-    font-family: 'Abril Fatface', cursive;
-    color: rgb(255, 255, 255);
-    mix-blend-mode: difference;
-    height: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    z-index: 10;
+#landingContent{
+    position: relative;
+    margin-top: 15%;
 }
 
-#welcomeHeader h2 {
-    margin: 0 }
+#portfolioBanner{
+    color: #eeeeee;
+    /* background-color:#393e46; */
+    padding: 50px;
+    font-size: 7.5rem;
+    z-index: 2;
+}
 
-
-.offset1{
+#landingContent img{
     position: absolute;
-    display: flex;
-    justify-content: left;
-    width: 70%;
-    height: 50%;
-    left: 50%;
-    top: 20%;
-    background-color: rgb(151, 0, 0, 1);
-    z-index: 0;
-    border-radius: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* box-shadow: 0px 10px 10px black; */
+}
+ 
+#color1, #color2{
+    background: #eeeeee;
+    height: 60rem;
+    width: 60rem;
+    position: absolute;
+    border-radius: 50%;
+     z-index: 0;
+    filter: blur(10rem);
+}
+
+
+
+/* #color1 {
+    background: linear-gradient(to right bottom,
+        rgba(123, 199, 77, 0.3),
+        rgba(255, 255, 255, 0.8));
+    top: -15%;
+    right: -15%;
     animation-delay: 5s;
-    animation: offsetDown 10s infinite ;
+    animation: color1 100s infinite;
+   
+}
+
+     @keyframes color1 {
+        0% {
+            transform: translateY(0%);
+        }
+
+        25% {
+            
+            transform: translateY(650%);
+            
+
+        }
+
+        50% {
+            
+            transform: translateX(-150%);
+            
+
+        }
+
+        75% {
+            
+            transform: translateY(-650%);
+            
+
+        }
+
+        100% {
+            
+            transform: translateX(0);
+            
+        }
+
+    }
+
+
+ 
+#color2 {
+    background: linear-gradient(to right bottom,
+        rgba(123, 199, 77, 0.3),
+        rgba(255, 255, 255, 0.8));
+    bottom: -20%;
+    left: -20%;
+    animation-delay: 5s;
+    animation: color2 100s infinite;
+
+} 
+
+@keyframes color2 {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+
+        transform: translateY(-100%);
+        
+
+
+    }
+
+    50% {
+
+        transform: translateX(150%);
+
+
+    }
+
+    75% {
+
+        transform: translateY(650%);
+
+
+    }
+
+    100% {
+
+        transform: translateX(0);
+
+    }
+
+} */
+#landingHeader{
+    position: absolute;
+    color: #7bc74d;
+    font-size: 5rem;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #393e46;
+    margin-bottom: 0;
+}
+
+    @media screen and (min-width: 768px) {
+        #landingContent {
+            margin-top: 2%;
+        }
+        #portfolioBanner {
+            font-size: 15rem;
+        }
+         #landingHeader {
+             font-size: 10rem;
+         }
+    }
+
+    @media screen and (min-width: 1280px) {
+        
+        #portfolioBanner {
+            font-size: 20rem;
+        }
+    }
+
+
+
+
+
+
+/**-------------------- About Me --------------------*/
+
+#sectionHeader {
+    text-align: left;
+    color: #222831;
+    font-family: 'Acme', sans-serif;
+
+}
+
+#two{
+    background-color: #393e46;
+    height: 100%;
     
 }
 
-    @keyframes offsetDown{
-        0%{
-            border-radius: 0%;
-            transform: translateX(0%);
-        }
+/* #aboutBio, #aboutMeSection{
+    margin: 2%;
+    
+} */
 
-        20%{
-            border-radius: 25%;
-            transform: translateX(-50%);
-        }
-        40%{
-            border-radius: 0%;
-            transform: translateX(-100%);
-        }
-        60%{
-            border-radius: 25%;
-            transform: translateX(-50%);
-        }
-        100%{
-            border-radius: 0%;
-            transform: translateX(0%);
-        }
-
-    }
-
-.offset2{
-    position: absolute;
-    display: flex;
-    justify-content: left;
-    width: 60%;
-    height: 50%;
-    right: 50%;
-    top: 25%;
-    background-color: rgb(0, 0, 0, 1);
-    z-index: 0;
-    border-radius: 30px;
-    animation-delay: 10s;
-    animation: offsetUp 10s infinite;
-}
-
-@keyframes offsetUp{
-    0%{
-        border-radius: 0%;
-        transform: translateX(0%);
-    }
-
-    20%{
-        border-radius: 25%;
-        transform: translateX(50%);
-    }
-    40%{
-        border-radius: 0%;
-        transform: translateX(100%);
-    }
-    60%{
-        border-radius: 25%;
-        transform: translateX(50%);
-    }
-    100%{
-        border-radius: 0%;
-        transform: translateX(0%);
-    }
-
-}
-
-
-#downArrow{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    mix-blend-mode: difference;
-    color: grey;
-    position: absolute;
-    bottom: 0;
-    padding: 10px;
-}
-
-/* About Me */
-#aboutMe {
-    position: absolute;
-    overflow: hidden; 
-
-    border: none !important;
-    color: white;
-}
-
-#aboutMe{
-    padding: 0px;
-    position: relative;
-    bottom: 0;
-}
-
-
-.card-panel{
-    border-radius: 30px !important;
-    background-color: rgba(0,0,0,1) !important;
+#aboutBio .acard{
+    border-radius: 5px !important;
+    background-color: #222831 !important;
     box-shadow: 0px 2px 10px black !important;
     margin-top: 1% !important;
-    
+    max-width: 400px;
+    display: none;
+
 }
 
 h4{
     color: black;
     text-align: left;
     mix-blend-mode: darken;
+    font-family: 'Acme', sans-serif;
     
 }
 
-#aboutMe ul{
-    color: black;
-}
-
 #skillHeader{
-    font-weight: bold;
-    font-style: italic;
+    font-size: 1.5rem;
+    font-family: 'Acme', sans-serif;
 }
 
 #adjectives{
-    width: 100%;
-    height: 100%;
+    max-width: 100px;
 
 }
 
@@ -243,152 +312,214 @@ h4{
     text-align: center;
     display: block;
     justify-content: center;
-    mix-blend-mode: luminosity;
-    
-}
-
-#aboutBio p{
-    text-align: left;
+    color: #ffffff;
     font-size: 1.2rem;
-    color: black;
-
-
 }
 
-#attributes{
-    display: flex;
-    justify-self: center;
+#aboutMeSection li{
+    text-align: center;
+    line-height: 2rem;
+    color: #eeeeee;
 }
+
+#aboutMeSection span{
+    text-align: left !important;
+    font-size: 1.2rem;
+    line-height: 0;
+    color: #eeeeee;
+}
+
 
 /* Portfolio */
-#sectionHeader{
-    text-align: center;
-    font-family: 'Abril Fatface', cursive;
-    margin-bottom: 25px;
-    color:rgba(151,0,0,1);
+#work{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+  clear: both;
+  height: 100%
+  
 }
 
-#projectName, #projectModal{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    margin: 10px;
-   
+#three{
+    background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(255, 183, 183, 1) 100%);
+    height: 100%;
+
 }
 
-#portfolioCard1{
-    background-image: url(./images/train.jpeg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 2px 10px black;
-    width: 95%;
-}
-
-#portfolioCard2{
-    background-image: url(./images/giphy-3.gif);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 2px 10px black;
-    width: 95%;
-}
-#portfolioCard3{
-    background-image: url(./images/coronavirus-25.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 2px 10px black;
-    width: 95%;
-}
-
-.modal-content{
-    display: block;
-    justify-content: center;
-    text-align: center;
-    max-width: 100%;
-    margin: 5%;
-}
-
-.modal-content img{
-    max-width: 280px;
-    max-height: 180px;
-}
-
-#projectModal a{
-    mix-blend-mode: normal;
-    background-Color: black;
-    border-style: solid ;
-    border-width: 1px;
-    border-color:  white;
-}
-
-#projectName span{
-    font-size: 1.5rem;
-    background-color: black;
+#workSummary{
     padding: 10px;
-    border-style: solid ;
-    border-width: 1px;
-    border-color:  white;
+    margin: 5px;
 }
 
+@media screen and (min-width: 768px) {
+    #workImage{
+        margin-top: 10px;
+        width: 900px;
+        
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    #work {
+        display: flex;
+        height: 75vh;
+    }
+
+
+    #workImage {
+        display: block;
+        width: 1000px;
+    }
+
+}
+@media screen and (min-width: 1280px) {
+    #work{
+        display: flex;
+        height: 75vh;
+    }
+    #workSummary{
+        margin-left: 1rem;
+        width: 30%;
+    }
+    #workImage{
+        display: block;
+        max-width: 750px;
+        margin-top: 5%;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    #work {
+        display: flex;
+        height: 75vh;
+    }
+
+    #workSummary {
+        margin-left: 1rem;
+        width: 40%;
+    }
+
+    #workImage {
+        display: block;
+        max-width: 800px;
+        margin-top: 5%;
+    }
+
+}
+
+/* .pcard{
+    padding: 0 !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 2px 10px black !important;
+    max-width: 800px;
+    box-sizing: content-box;
+    overflow: hidden;
+    max-height: 100vh;
+    z-index: 1;
+    position: relative;
+} */
+
+.content{
+    padding: 5%;
+    text-align: left;
+}
+
+.content-img img{
+    width: 100% ;
+    max-height: 100% auto;
+    padding: 0%;
+    display: block;
+}
+
+#liveBtn{
+    background-color: #393e46;
+    color: #eeeeee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #393e46 !important;
+    margin: 2px;
+}
 
 #repoBtn{
-    background-color: black !important;
-    color: white !important;
-    border-style: solid;
-    border-color:  white !important;
-}
-
-.modal-close{
-    background-color: rgb(151, 0, 0, 1) !important;
-    color: white !important;
-} 
-
-
-
-
-/* Contact Me */
-#contactTitle{
-    text-align: center;
-    font-family: 'Abril Fatface', cursive;
-}
-
-
-#contactCard{
-    display: flex;
-    justify-content: center;
-    border: black solid 5px;
-    box-shadow: 0px 2px 10px black;
-    background: linear-gradient(170deg, rgba(151,0,0,1) 50%, rgba(0,0,0,1) 50%) !important;
+    border: 1px solid black;
     border-radius: 5px;
-    color: white;
-    text-align: left;
-    width: 100%;
+    box-shadow: 1px 1px 2px black !important;
+    margin: 2px;
 }
 
-.card-panel h5{
-    padding-right: 10%;
+
+#repoBtn:hover{
+    border-radius: 5px;
+    box-shadow: 1px 2px 4px black !important;
+    margin: 2px;
+}
+
+#techStack {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 5px;
+    box-shadow: 0px 1px 2px black !important;
+}
+
+
+
+.covid19{
+    background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(255, 183, 183, 1) 100%);
+    color: #393e46;
+}
+
+.musicPlayer{
+    background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(247, 196, 81, 1) 100%);
+    color: #000000;
+}
+
+
+.giphyProject{
+    background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(58, 71, 80, 1) 100%);
+    color: #000000;
+}
+
+
+.trainScheduler{
+    background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(236, 233, 255, 1) 100%);
+    color: #000000;
+}
+
+
+
+
+
+
+/*------------ Contact Me ------------*/
+
+#four {
+    margin: 0 !important;
+    height: 75vh;
+
+}
+
+#formAlignment{
+    display: flex;
+}
+
+input{
+    color: #393e46;
+}
+
+.btn{
+    background-color: #7bc74d !important;
 }
 
 
 #li1, a{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-
 }
-
-
-
 
 a{
     text-decoration: none;
@@ -396,152 +527,62 @@ a{
 }
 
 
-hr{
-    width: 50%;
-    color: rgb(55, 51, 51) !important;
-}
 
 footer{
-    background-color: black;
-    color: white;
-    height: 50px;
-    position: sticky;
+    background-color: inherit;
+    color: #7bc74d;
     text-align: center;
+    bottom: 0;
+    line-height: 5rem;
+    font-size: 1.8rem;
+    padding-top: 15%;
 }
 
+
+
 @media screen and (min-width: 768px) {
-    #landingContent{
-        height: 250px;
-    }
-    
-    #welcomeHeader{
-        height: 1.2em;
-    }
-
-    #contactCard{
-        width: 60%;
-        
-    }
-
-    #card-contact{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-    .offset1{
-        height: 50%;
+    #who{
         width: 50%;
-    }
-    .offset2{
-        height: 50%;
-        width: 40%;
-    }
-
-    #aboutBio{
-        margin: 5%;
-    }
-
-    #attributes{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        margin: 0px;
-    }
-
-    #cardAlign{
-        display: flex;
-        justify-content: center;
-    }    
-
-    #contactCard{
-        width: 50%;
-    }
-    
-    .modal-content img{
-        max-width: 320px;
-        max-height: 200px;
-    }
-
-@media screen and (min-width: 1023px) {
-    #landingContent{
-        height: 250px;
-    }
-    
-    #welcomeHeader{
-        height: 1em;
-    }
-    #navTitle{
-        display: block;
-    }
-
-
-    .modal-content{
-        display: block;
-        justify-content: center;
-        text-align: center;
-        max-width: 100%;
-        margin: 5%;
-    }
-
-    .modal-content img{
-        max-width: 325px;
-        max-height: 250px;
-    }
-
-
-    #contactCard{
-        width: 50%;
-        
-    }
-
-    #card-contact{
-        display: flex;
         justify-content: center;
         align-content: center;
     }
-    .offset1{
-        top: 15%;
-        height: 40%;
-        width: 40%;
-    }
-    .offset2{
-        top: 20%;
-        height: 40%;
-        width: 30%;
+
+    #four{
+        margin-top: 100px;
+        margin-bottom: 15%;
     }
 
-    #aboutBio{
-        margin: 5%;
-    }
+}
 
-    #attributes{
-        display: flex;
+@media screen and (min-width: 1024px) {
+    #aboutMeRow{
+        display: inline-block;
+        align-items: center;
         justify-content: center;
-        align-content: center;
-        margin: 0px;
+        width: 100%;
+        height: auto;
+        vertical-align: top;
     }
-    .card-panel {
-        width: 70%;
-    }
-   
+    /* #three{
+        margin-top: 150px;
+    } */
+
   }
 
 @media screen and (min-width: 1280px) {
-    #landingContent{
-        height: 250px;
+    #four{
+        overflow: visible;
     }
-    
-    #welcomeHeader{
-        height: 1em;
+
+    #aboutBio, #aboutMeSection{
+        margin-left: 10%;
+        margin-right: 10%;
+
     }
-    .offset1{
-        top: 25%;
-        height: 45%;
-        width: 40%;
+
+    main{
+        overflow:hidden;
     }
-    .offset2{
-        top: 30%;
-        height: 45%;
-        width: 30%;
+
     }
-}
+
