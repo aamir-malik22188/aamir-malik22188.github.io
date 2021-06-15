@@ -9,6 +9,7 @@ Color Palette:
 html, main, body {
     flex: 1 0 auto;
     scroll-behavior: smooth;
+    overflow: none;
   }
 
   
@@ -19,14 +20,12 @@ section {
     /* margin: 1.5% 0 1.5% 0; */
 }
 
-.row{
-    border-spacing:0;
-    border-collapse:collapse;
-}
+
 
 h2{
     color: #7bc74d
 }
+
 
 #navbar{
     background-color: #393e46 !important;
@@ -92,167 +91,81 @@ h2{
 /* ------------- Landing Page ----------*/
 #one {
     height: 100vh;
-    display: flex;
+    display: flex;  
     justify-content: center;
     align-content: center;
     text-align: center;
 }
 
-#landingContent{
-    position: relative;
-    margin-top: 15%;
+
+#landingContent {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#portfolioBanner{
+#name{
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    left: 0;
+    top: 10%;
     color: #eeeeee;
-    /* background-color:#393e46; */
-    padding: 50px;
-    font-size: 7.5rem;
-    z-index: 2;
+    font-size: 10rem;
+    line-height: 10rem;
+
 }
 
-#landingContent img{
+#memoji{
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    /* box-shadow: 0px 10px 10px black; */
-}
- 
-#color1, #color2{
-    background: #eeeeee;
-    height: 60rem;
-    width: 60rem;
-    position: absolute;
-    border-radius: 50%;
-     z-index: 0;
-    filter: blur(10rem);
+    width: 200px;
+    left: 25%;
+    top: 40%;
 }
 
-
-
-/* #color1 {
-    background: linear-gradient(to right bottom,
-        rgba(123, 199, 77, 0.3),
-        rgba(255, 255, 255, 0.8));
-    top: -15%;
-    right: -15%;
-    animation-delay: 5s;
-    animation: color1 100s infinite;
-   
-}
-
-     @keyframes color1 {
-        0% {
-            transform: translateY(0%);
-        }
-
-        25% {
-            
-            transform: translateY(650%);
-            
-
-        }
-
-        50% {
-            
-            transform: translateX(-150%);
-            
-
-        }
-
-        75% {
-            
-            transform: translateY(-650%);
-            
-
-        }
-
-        100% {
-            
-            transform: translateX(0);
-            
-        }
-
-    }
-
-
- 
-#color2 {
-    background: linear-gradient(to right bottom,
-        rgba(123, 199, 77, 0.3),
-        rgba(255, 255, 255, 0.8));
-    bottom: -20%;
-    left: -20%;
-    animation-delay: 5s;
-    animation: color2 100s infinite;
-
-} 
-
-@keyframes color2 {
-    0% {
-        transform: translateY(0%);
-    }
-
-    25% {
-
-        transform: translateY(-100%);
-        
-
-
-    }
-
-    50% {
-
-        transform: translateX(150%);
-
-
-    }
-
-    75% {
-
-        transform: translateY(650%);
-
-
-    }
-
-    100% {
-
-        transform: translateX(0);
-
-    }
-
-} */
-#landingHeader{
-    position: absolute;
-    color: #7bc74d;
-    font-size: 5rem;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #393e46;
-    margin-bottom: 0;
+#tagline{
+        position: absolute;
+        color: #393e46;
+        font-size: 3rem;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 0;
 }
 
     @media screen and (min-width: 768px) {
         #landingContent {
             margin-top: 2%;
         }
-        #portfolioBanner {
-            font-size: 15rem;
+        #name{
+            top: 25%;
+            font-size: 20rem;
+            line-height: 15rem;
         }
-         #landingHeader {
-             font-size: 10rem;
-         }
+        #memoji{
+            width: 250px;
+            top: 35%;
+            left: 35%;
+        }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1024px) {
+     #name {
+         top: 15%;
+         font-size: 25rem;
+         line-height: 20rem;
+     }
+
+     #memoji {
+         width: 250px;
+         top: 30%;
+         left: 40%;
+     }
         
-        #portfolioBanner {
-            font-size: 20rem;
-        }
     }
 
 
@@ -263,7 +176,8 @@ h2{
 /**-------------------- About Me --------------------*/
 
 #sectionHeader {
-    text-align: left;
+    text-align: center;
+    padding-top: 1%;
     color: #222831;
     font-family: 'Acme', sans-serif;
 
@@ -275,20 +189,7 @@ h2{
     
 }
 
-/* #aboutBio, #aboutMeSection{
-    margin: 2%;
-    
-} */
 
-#aboutBio .acard{
-    border-radius: 5px !important;
-    background-color: #222831 !important;
-    box-shadow: 0px 2px 10px black !important;
-    margin-top: 1% !important;
-    max-width: 400px;
-    display: none;
-
-}
 
 h4{
     color: black;
@@ -330,110 +231,69 @@ h4{
 }
 
 
-/* Portfolio */
+/*-------------- Portfolio ----------------*/
 #work{
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   clear: both;
-  height: 100%
-  
+  height: 100%; 
+  vertical-align: left;
+}
+
+#workImage{
+    padding: 5%;
+    margin-top: 5%;
 }
 
 #three{
     background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(255, 183, 183, 1) 100%);
     height: 100%;
-
-}
-
-#workSummary{
-    padding: 10px;
-    margin: 5px;
 }
 
 @media screen and (min-width: 768px) {
-    #workImage{
-        margin-top: 10px;
-        width: 900px;
-        
+    #work{
+        padding: 5%;
+    }
+
+    #workSummary{
+        padding: 0 10% 0 10%;
+    }
+
+    #workImage {
+        padding: 0 10% 0 10%;
+        width: 750px;
 
     }
 
 }
 
 @media screen and (min-width: 1024px) {
-    #work {
-        display: flex;
-        height: 75vh;
-    }
-
-
+   
     #workImage {
         display: block;
-        width: 1000px;
+        width: 1024px;
     }
 
 }
+
 @media screen and (min-width: 1280px) {
-    #work{
-        display: flex;
-        height: 75vh;
-    }
-    #workSummary{
-        margin-left: 1rem;
-        width: 30%;
-    }
-    #workImage{
-        display: block;
-        max-width: 750px;
-        margin-top: 5%;
-    }
-
-}
-
-@media screen and (min-width: 1300px) {
-    #work {
-        display: flex;
-        height: 75vh;
-    }
-
     #workSummary {
-        margin-left: 1rem;
-        width: 40%;
+        padding: 0 25% 0 25%;
     }
-
     #workImage {
-        display: block;
-        max-width: 800px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        max-width: 1500px;
         margin-top: 5%;
     }
 
 }
 
-/* .pcard{
-    padding: 0 !important;
-    border-radius: 15px !important;
-    box-shadow: 0px 2px 10px black !important;
-    max-width: 800px;
-    box-sizing: content-box;
-    overflow: hidden;
-    max-height: 100vh;
-    z-index: 1;
-    position: relative;
-} */
 
-.content{
-    padding: 5%;
-    text-align: left;
-}
-
-.content-img img{
-    width: 100% ;
-    max-height: 100% auto;
-    padding: 0%;
-    display: block;
-}
 
 #liveBtn{
     background-color: #393e46;
@@ -471,17 +331,21 @@ h4{
 .covid19{
     background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(255, 183, 183, 1) 100%);
     color: #393e46;
+    margin-bottom: 0 !important;
 }
 
 .musicPlayer{
     background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(247, 196, 81, 1) 100%);
     color: #000000;
+    margin-bottom: 0 !important;
 }
 
 
 .giphyProject{
     background: linear-gradient(90deg, rgba(238, 238, 238, 1) 0%, rgba(58, 71, 80, 1) 100%);
     color: #000000;
+    margin-bottom: 0 !important;
+
 }
 
 
@@ -499,12 +363,18 @@ h4{
 
 #four {
     margin: 0 !important;
-    height: 75vh;
+    height: 100%;
 
 }
 
 #formAlignment{
     display: flex;
+    margin-top: 10%;
+}
+@media screen and (min-width: 1280px) {
+    #formAlignment{
+        margin-top: 5%;
+    } 
 }
 
 input{
@@ -534,8 +404,10 @@ footer{
     text-align: center;
     bottom: 0;
     line-height: 5rem;
-    font-size: 1.8rem;
-    padding-top: 15%;
+    font-size: 1.75rem;
+    padding-top: 5%;
+    margin-top: 2%;
+    
 }
 
 
@@ -562,6 +434,8 @@ footer{
         width: 100%;
         height: auto;
         vertical-align: top;
+        padding: 0 10% 10% 10%;
+        height: 100%;
     }
     /* #three{
         margin-top: 150px;

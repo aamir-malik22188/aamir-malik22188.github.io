@@ -2,7 +2,7 @@
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 500) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 750) {
       document.getElementById("navbar").style.top = "0px";
       
     } else {
@@ -14,9 +14,4 @@
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
-
-
-
-
-
 

@@ -11,15 +11,13 @@
   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
   crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="app.js"></script>
+  <script src="app.js"></script>
 
 
 
   <link rel="stylesheet" href='style.css' media="all">
   
 
-  
-</script>
 
    <!-- Compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -47,7 +45,7 @@
   <div class="nav-wrapper navbar-fixed" >
     <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons" id="menuButton">menu</i></a>
     <ul  id="nav-mobile" class="hide-on-med-and-down">
-        <li ><a id="navTitle" href="#one"><img src="./images/logo.png"></a></li>
+        <li ><a id="navTitle" href="#one"><img src="./images/logo.png" alt="logo"></a></li>
         <li ><a id="navTitle" href="#one">Home</a></li>
         <li ><a id="navTitle" href="#two">About Me</a></li>
         <li ><a id="navTitle" href="#three">Portfolio</a></li>
@@ -75,18 +73,22 @@
 
 <div class="container-fluid" id="landingContent">
   <div class="row" >
-    <div class='col'>
-      <h1 id="portfolioBanner">Portfolio</h1>
+    <div class='col s12 m12 l12'>
+      <h1 id="name">Aamir <br>
+                    Malik
+      </h1>   
+      <div id="memoji"><img src='/images/portfolio-sm.svg' alt='profile image'></div>
+  </div>
+  <p id='tagline'> Hello! &#128075; Welcome to my Portfolio<span style='color: #7bc74d'> ⤵</span></p> 
+</div>
+     
+      
       <!-- img size 375 x 700 for small screen -->
-      <img src='https://via.placeholder.com/375x700'> 
       <!-- img size 750 x 950 for ipad screen -->
       <!-- img size 1100 x 750 for laptop screen -->
       <!-- img size 1200 x 2100 for XL screen -->
-      <h1 id="landingHeader">Aamir Malik</h1>
-    </div>
-  </div>
-</div>
-
+      <!-- <h1 id="landingHeader">Aamir Malik</h1> -->
+      <!-- <h1 id="portfolioBanner"> Hello &#128075;! Welcome to my Portfolio</h1> -->
 </section>
 
 
@@ -135,10 +137,8 @@
     <div class ='row' id='aboutMeRow'>
       <div class="col ">
           <p><span style="color: #eeeeee">
-            Welcome to my Portfolio! Please allow me to introduce myself, my name is Aamir Malik and I am a Full Stack Developer.<br><br>
-
-           
-(place holder)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed elit tristique mauris dignissim aliquam in vitae purus. Sed vitae pulvinar metus. Suspendisse commodo tellus a eros molestie, non auctor augue luctus. In hac habitasse platea dictumst. Ut est quam, hendrerit eu gravida et, fermentum quis mauris. Morbi a magna.
+            Please allow me to introduce myself, my name is <b>Aamir Malik</b> and I am a <b>Full Stack Developer.</b><br><br>
+            For the last 8 years, I have worked on gaining various skills in Healthcare Operations and IT. I managed a Laboratory that received 3000+ patients daily. I then switched gears and joined our IT team and worked on various business applications to help improve the way we visualized and captured data. I'm a firm believer that there isn't a problem that can't be solved.  <br><br>
           </span></p>
           <div class="col s12 m3 l3">
             <ul>
@@ -165,19 +165,19 @@
             <ul>
               <li id="skillHeader"><span style='color: #7bc74d'>Strategic Planning</span></li>
                 <li>Azure DevOps</li>
+                <li>Jira</li>
                 <li>Figma</li>
                 <li>Adobe XD</li>
                 <li>Postman</li>
-                <li>GitHub Pull/Push Request</li>
+                <li>GitHub Management</li>
             </ul>
           </div> 
           <div class="col s12 m3 l3">
             <ul>
               <li id="skillHeader"><span style='color: #7bc74d'>Other Skills</span></li>
-                <li>Bilingual: English and Urdu</li>
+                <li>Bilingual</li>
                 <li>Leadership</li>
-                <li>Improve Business Processes</li>
-                <li>Agile and Scrum</li>
+                <li>Agile/Scrum</li>
                 <li>Adaptable</li>
                 <li>Team Player</li>
                 <li>Effective Communicator</li>
@@ -223,7 +223,7 @@
           <a href="https://github.com/aamir-malik22188/covid-19-tracker" class="waves-effect btn-flat" id="repoBtn">GitHub Repo</a>
           <a href="https://github.com/aamir-malik22188/covid-19-tracker" class="waves-effect btn-flat" id="liveBtn">Live Demo</a>
       </div>
-      <div class="col s12 m12 l12" id="workImage"> 
+      <div class="col s12 m6 l12" id="workImage"> 
           <img src='./images/covid-19-tracker.svg' alt="covidApp-landing-page" loading="lazy"/>
       </div>
   </div>  
@@ -321,12 +321,13 @@
     </div>
   </div>
 </div>
+
 <div class="container-fluid" id="formAlignment">
   <div class="row" >
     <form class="col s12 m12" method="POST" action="https://formspree.io/f/xgeravkr">
       <div class="row">
         <div class="input-field col s12 ">
-          <input  id="full_name" type="text" name="name"class="validate">
+          <input  id="full_name" type="text" name="name" class="validate">
           <label for="first_name">Full Name</label>
         </div>
       </div>
@@ -351,41 +352,18 @@
       <button type="submit" class="btn"> Submit</button>
     </form>
   </div>
-        <!-- <div id="contact-right">
-          <ul>
-            <li>City:</li>
-            <li id="li1">Dallas</li>
-            <br>
-            <li>State:</li>
-            <li id="li1">Texas</li>
-            <br>
-            <li>Email:</li>
-            <li id="li1">Aamir22188@gmail.com</li>
-            <br>
-            <li>Social:</li>
-            <a href="www.linkedin.com/in/aamir-malik-22188am">LinkedIn</a>
-            <br>
-            <a href="www.linkedin.com/in/aamir-malik-22188am">Twitter</a>
-          </ul>
-        </div> -->
-    </div>
-  </div> 
 </div>
-
-
-
+  
 </section>
 
 
 
 
 </main>
-<!-- <div id="color1"></div>
-<div id="color2"></div> -->
-  <footer>
-    <p><span style="color: #393e46">Portfolio Designed by</span> Aamir M.</p>
-  </footer>
 
-</section>
+<footer>
+  <p><span style="color: #393e46">Portfolio Designed by</span> Aamir M.</p>
+</footer>
+
 </body>
 </html>
