@@ -39,30 +39,29 @@ h2{
 
 }
 
-#navTitle{
+.hide-on-med-and-down a{
     font-size: 1.5rem;
     color: #eeeeee;
     
 }
 
-#navTitle:hover{
+.hide-on-med-and-down a:hover {
     background-color: #393e46;
     color: #7bc74d;
     border-radius: 5px;
 }
 
-#mobile-demo{
+.sidenav {
     background-color: #000000;
     text-align: center;
     width: 50%;
-    
 }
 
-#mobileTitle{
-    color: #eeeeee;
-    height: 15rem;
-    font-size: 2rem;
-    display: flex;
+.sidenav a {
+    color: #eeeeee !important;
+    height: 15rem !important;
+    font-size: 2rem !important;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     
@@ -175,7 +174,7 @@ h2{
 
 /**-------------------- About Me --------------------*/
 
-#sectionHeader {
+.sectionHeader {
     text-align: center;
     padding-top: 1%;
     color: #222831;
@@ -199,7 +198,7 @@ h4{
     
 }
 
-#skillHeader{
+.skillHeader{
     font-size: 1.5rem;
     font-family: 'Acme', sans-serif;
 }
@@ -273,7 +272,7 @@ h4{
    
     #workImage {
         display: block;
-        width: 1024px;
+        width: 1100px;
     }
 
 }
@@ -295,15 +294,15 @@ h4{
 
 
 
-#liveBtn{
-    background-color: #393e46;
-    color: #eeeeee;
+.liveBtn{
+    background-color: #393e40 !important;
+    color: #eeeeee !important;
     border-radius: 5px;
     box-shadow: 1px 1px 2px #393e46 !important;
     margin: 2px;
 }
 
-#repoBtn{
+.repoBtn{
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 1px 1px 2px black !important;
@@ -311,13 +310,13 @@ h4{
 }
 
 
-#repoBtn:hover{
+.repoBtn:hover{
     border-radius: 5px;
     box-shadow: 1px 2px 4px black !important;
     margin: 2px;
 }
 
-#techStack {
+.techStack li {
     display: inline-block;
     padding: 5px;
     border: 2px solid black;

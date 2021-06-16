@@ -2,7 +2,7 @@
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 750) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 700) {
       document.getElementById("navbar").style.top = "0px";
       
     } else {
